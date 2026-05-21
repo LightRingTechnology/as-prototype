@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>تقديم طلب جديد — منصة الاعتماد الوطنية</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<div class="app">
+  <aside class="sidebar">
+    <div class="sidebar__brand">
+      <div class="sidebar__logo">و</div>
+      <div><b>منصة الاعتماد الوطنية</b><span>وزارة التعليم العالي والبحث العلمي</span></div>
+    </div>
+    <div class="sidebar__portal"><span>بوابة المؤسسة</span><span class="dot" style="background:#2563c9"></span></div>
+    <nav class="nav">
+      <div class="nav__label">القائمة الرئيسية</div>
+      <a href="dashboard.html" class=""><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/></svg><span>لوحة المعلومات</span></a>
+<div class="nav__label">طلبات الاعتماد</div>
+      <a href="apply.html" class="active"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg><span>تقديم طلب جديد</span></a>
+      <a href="applications.html" class=""><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="6" y="4" width="12" height="17" rx="2"/><path d="M9 4V3h6v1"/><path d="M9 10h6M9 14h6"/></svg><span>طلباتي</span></a>
+      <a href="documents.html" class=""><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/></svg><span>المستندات</span></a>
+    </nav>
+    <div class="sidebar__foot">
+      <a href="../index.html"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 4L3 8l4 4"/><path d="M3 8h13a4 4 0 0 1 4 4"/><path d="M17 20l4-4-4-4"/><path d="M21 16H8a4 4 0 0 1-4-4"/></svg> تبديل البوابة</a>
+    </div>
+  </aside>
+  <div class="main">
+    <header class="topbar">
+      <button class="icon-btn hamburger" data-noop><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+      <div class="topbar__title">تقديم طلب جديد<small>معالج التقديم</small></div>
+      <div class="topbar__spacer"></div>
+      <div class="search"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4-4"/></svg><input placeholder="بحث في المنصة..." data-noop></div>
+      <button class="icon-btn" data-noop><svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9a6 6 0 1 1 12 0c0 6 2 7 2 7H4s2-1 2-7z"/><path d="M10 21h4"/></svg><span class="badge-dot"></span></button>
+      <div class="avatar">
+        <div class="avatar__img">ج.ب</div>
+        <div class="avatar__name">جامعة بغداد التقنية<span>منسق ضمان الجودة</span></div>
+      </div>
+    </header>
+    <div class="content">
+      <div class="crumb">بوابة المؤسسة / تقديم طلب جديد</div>
+      
+    <div class="page-head"><div><h1>تقديم طلب اعتماد جديد</h1><p>أكمل الخطوات الأربع لتقديم طلب اعتماد برنامج.</p></div></div>
+    <div class="steps">
+      <div class="step done"><div class="num">1</div><div class="lbl">اختيار المجلس والدورة</div></div>
+      <div class="step current"><div class="num">2</div><div class="lbl">اختيار البرنامج</div></div>
+      <div class="step"><div class="num">3</div><div class="lbl">رفع المستندات</div></div>
+      <div class="step"><div class="num">4</div><div class="lbl">المراجعة والإرسال</div></div>
+    </div><div data-panel="1" style="display:none">
+      <div class="card"><div class="card__head"><h3>الخطوة 1 — المجلس ودورة الاعتماد</h3></div>
+        <div class="card__body">
+          <div class="form-row">
+            <div class="field"><label>المجلس <span class="req">*</span></label>
+              <select class="input"><option>مجلس اعتماد الهندسة</option><option>مجلس اعتماد الطب</option><option>مجلس اعتماد التمريض</option></select></div>
+            <div class="field"><label>دورة الاعتماد <span class="req">*</span></label>
+              <select class="input"><option>دورة 2026–2027 (مفتوحة)</option></select>
+              <div class="hint">نافذة التقديم: 01-04-2026 ← 01-06-2026</div></div>
+          </div>
+          <div class="notice info">المعيار الحاكم لهذه الدورة: <b>معايير الهندسة v3</b>. سيُقيَّم طلبك وفق هذا الإصدار حصراً.</div>
+          <div class="between mt-24"><span></span><button class="btn btn--primary" onclick="gotoStep(2)">التالي ←</button></div>
+        </div></div></div><div data-panel="2">
+      <div class="card"><div class="card__head"><h3>الخطوة 2 — البرنامج المطلوب اعتماده</h3></div>
+        <div class="card__body">
+          <p class="muted mb-16">اختر التخصص الواحد الذي تطلب اعتماده ضمن هذه الدورة. كل طلب مرتبط ببرنامج واحد.</p>
+          <div class="grid grid--2"><label class="card" style="cursor:pointer;border-color:var(--teal-500);box-shadow:0 0 0 3px var(--teal-50)"><div class="card__body row" style="gap:12px">
+          <input type="radio" name="prog" checked>
+          <div style="flex:1"><b>هندسة مدنية</b><div class="muted" style="font-size:12px"><span class="tag">CIVIL-ENG</span></div></div><span class="badge teal" style="float:left">محدد</span>
+        </div></label><label class="card" style="cursor:pointer;"><div class="card__body row" style="gap:12px">
+          <input type="radio" name="prog" >
+          <div style="flex:1"><b>هندسة ميكانيكية</b><div class="muted" style="font-size:12px"><span class="tag">MECH-ENG</span></div></div>
+        </div></label><label class="card" style="cursor:pointer;"><div class="card__body row" style="gap:12px">
+          <input type="radio" name="prog" >
+          <div style="flex:1"><b>هندسة كهربائية وإلكترونية</b><div class="muted" style="font-size:12px"><span class="tag">ELEC-ENG</span></div></div>
+        </div></label><label class="card" style="cursor:pointer;"><div class="card__body row" style="gap:12px">
+          <input type="radio" name="prog" >
+          <div style="flex:1"><b>هندسة حاسبات</b><div class="muted" style="font-size:12px"><span class="tag">COMP-ENG</span></div></div>
+        </div></label><label class="card" style="cursor:pointer;"><div class="card__body row" style="gap:12px">
+          <input type="radio" name="prog" >
+          <div style="flex:1"><b>هندسة كيميائية</b><div class="muted" style="font-size:12px"><span class="tag">CHEM-ENG</span></div></div>
+        </div></label></div>
+          <div class="between mt-24"><button class="btn btn--ghost" onclick="gotoStep(1)">→ السابق</button>
+          <button class="btn btn--primary" onclick="gotoStep(3)">التالي ←</button></div>
+        </div></div></div><div data-panel="3" style="display:none">
+      <div class="card"><div class="card__head"><h3>الخطوة 3 — المستندات المطلوبة</h3></div>
+        <div class="card__body">
+          <div class="dropzone mb-16">اسحب الملفات هنا أو <b>تصفّح للرفع</b><div class="muted" style="font-size:12px;margin-top:6px">PDF, DOCX, XLSX — بحد أقصى 20MB لكل ملف</div></div>
+          <div class="between" style="padding:12px 0;border-bottom:1px solid var(--line-2)">
+          <div class="row"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/></svg><span>نموذج التقديم الرسمي <span class="req">*</span></span></div><span class="badge green">مرفوع</span></div><div class="between" style="padding:12px 0;border-bottom:1px solid var(--line-2)">
+          <div class="row"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/></svg><span>الخطة الدراسية للبرنامج <span class="req">*</span></span></div><span class="badge green">مرفوع</span></div><div class="between" style="padding:12px 0;border-bottom:1px solid var(--line-2)">
+          <div class="row"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/></svg><span>السيرة الذاتية لأعضاء هيئة التدريس <span class="req">*</span></span></div><span class="badge grey">مطلوب</span></div><div class="between" style="padding:12px 0;border-bottom:1px solid var(--line-2)">
+          <div class="row"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/></svg><span>تقرير التقييم الذاتي <span class="req">*</span></span></div><span class="badge grey">مطلوب</span></div><div class="between" style="padding:12px 0;border-bottom:1px solid var(--line-2)">
+          <div class="row"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/></svg><span>بيانات المختبرات والتجهيزات <span class="req">*</span></span></div><span class="badge grey">مطلوب</span></div><div class="between" style="padding:12px 0;border-bottom:1px solid var(--line-2)">
+          <div class="row"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/></svg><span>إحصاءات الطلبة والخريجين <span class="req">*</span></span></div><span class="badge grey">مطلوب</span></div>
+          <div class="between mt-24"><button class="btn btn--ghost" onclick="gotoStep(2)">→ السابق</button>
+          <button class="btn btn--primary" onclick="gotoStep(4)">التالي ←</button></div>
+        </div></div></div><div data-panel="4" style="display:none">
+      <div class="card"><div class="card__head"><h3>الخطوة 4 — مراجعة وإرسال</h3></div>
+        <div class="card__body">
+          <div class="grid grid--2 mb-16">
+            <div><div class="muted" style="font-size:12px">المجلس</div><b>مجلس اعتماد الهندسة</b></div>
+            <div><div class="muted" style="font-size:12px">الدورة</div><b>2026–2027</b></div>
+            <div><div class="muted" style="font-size:12px">البرنامج</div><b>هندسة مدنية (CIVIL-ENG)</b></div>
+            <div><div class="muted" style="font-size:12px">المعيار المطبّق</div><b>معايير الهندسة v3</b></div>
+          </div>
+          <div class="notice success mb-16"><span>✓</span><div>تم رفع <b>2 من 6</b> مستندات. يمكنك الإرسال الآن وإكمال باقي المستندات لاحقاً قبل إغلاق النافذة.</div></div>
+          <div class="notice info mb-16"><span>🔒</span><div>يربط هذا الطلب ثلاثة مرتكزات للتتبع القانوني: <b>المؤسسة</b> + <b>الدورة</b> + <b>البرنامج</b>.</div></div>
+          <div class="between mt-24"><button class="btn btn--ghost" onclick="gotoStep(3)">→ السابق</button>
+          <a href="applications.html" class="btn btn--primary">إرسال الطلب ✓</a></div>
+        </div></div></div>
+    </div>
+  </div>
+</div>
+<script src="../assets/app.js"></script>
+</body>
+</html>

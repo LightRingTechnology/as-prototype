@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>لوحة المعلومات — منصة الاعتماد الوطنية</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<div class="app">
+  <aside class="sidebar">
+    <div class="sidebar__brand">
+      <div class="sidebar__logo">و</div>
+      <div><b>منصة الاعتماد الوطنية</b><span>وزارة التعليم العالي والبحث العلمي</span></div>
+    </div>
+    <div class="sidebar__portal"><span>بوابة الوزارة</span><span class="dot" style="background:#c8a23c"></span></div>
+    <nav class="nav">
+      <div class="nav__label">القائمة الرئيسية</div>
+      <a href="dashboard.html" class="active"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/></svg><span>لوحة المعلومات</span></a>
+<div class="nav__label">الإشراف الوطني</div>
+      <a href="councils.html" class=""><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-5 9 5"/><path d="M4 9v10M20 9v10M9 9v10M15 9v10M3 21h18"/></svg><span>المجالس</span></a>
+      <a href="sla.html" class=""><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 18a8 8 0 1 1 16 0"/><path d="M12 14l4-3"/></svg><span>مراقبة مستوى الخدمة</span></a>
+      <a href="reports.html" class=""><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 20V4M4 20h16"/><rect x="7" y="11" width="3" height="6"/><rect x="12" y="7" width="3" height="10"/><rect x="17" y="13" width="3" height="4"/></svg><span>التقارير والإحصاءات</span></a>
+    </nav>
+    <div class="sidebar__foot">
+      <a href="../index.html"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 4L3 8l4 4"/><path d="M3 8h13a4 4 0 0 1 4 4"/><path d="M17 20l4-4-4-4"/><path d="M21 16H8a4 4 0 0 1-4-4"/></svg> تبديل البوابة</a>
+    </div>
+  </aside>
+  <div class="main">
+    <header class="topbar">
+      <button class="icon-btn hamburger" data-noop><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+      <div class="topbar__title">لوحة المعلومات<small>الإشراف الوطني</small></div>
+      <div class="topbar__spacer"></div>
+      <div class="search"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4-4"/></svg><input placeholder="بحث في المنصة..." data-noop></div>
+      <button class="icon-btn" data-noop><svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9a6 6 0 1 1 12 0c0 6 2 7 2 7H4s2-1 2-7z"/><path d="M10 21h4"/></svg><span class="badge-dot"></span></button>
+      <div class="avatar">
+        <div class="avatar__img">أ.ر</div>
+        <div class="avatar__name">م. أحمد الراوي<span>مدير دائرة الاعتماد - الوزارة</span></div>
+      </div>
+    </header>
+    <div class="content">
+      <div class="crumb">بوابة الوزارة / لوحة المعلومات</div>
+      
+    <div class="page-head"><div><h1>لوحة الإشراف الوطني</h1>
+    <p>نظرة شاملة على نشاط الاعتماد عبر جميع المجالس — وزارة التعليم العالي والبحث العلمي.</p></div>
+    <a href="reports.html" class="btn btn--navy"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 20V4M4 20h16"/><rect x="7" y="11" width="3" height="6"/><rect x="12" y="7" width="3" height="10"/><rect x="17" y="13" width="3" height="4"/></svg> تقرير شامل</a></div>
+    <div class="grid grid--4 mb-24">
+      <div class="stat"><div class="stat__ico bg-amber"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-5 9 5"/><path d="M4 9v10M20 9v10M9 9v10M15 9v10M3 21h18"/></svg></div>
+  <div class="stat__val">6</div><div class="stat__label">مجالس اعتماد</div></div>
+      <div class="stat"><div class="stat__ico bg-blue"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="6" y="4" width="12" height="17" rx="2"/><path d="M9 4V3h6v1"/><path d="M9 10h6M9 14h6"/></svg></div>
+  <div class="stat__val">148</div><div class="stat__label">طلبات نشطة وطنياً</div></div>
+      <div class="stat"><div class="stat__ico bg-green"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg></div>
+  <div class="stat__val">312</div><div class="stat__label">برامج معتمدة</div></div>
+      <div class="stat"><div class="stat__ico bg-red"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 18a8 8 0 1 1 16 0"/><path d="M12 14l4-3"/></svg></div>
+  <div class="stat__val">7</div><div class="stat__label">انتهاكات SLA مفتوحة</div></div>
+    </div>
+    <div class="grid" style="grid-template-columns:1.6fr 1fr;">
+      <div class="card"><div class="card__head"><h3>حجم الطلبات حسب المجلس</h3></div>
+        <div class="card__body"><div class="barchart">
+          <div class="col"><div class="b" style="height:90%"></div><span>الهندسة</span></div>
+          <div class="col"><div class="b alt" style="height:70%"></div><span>الطب</span></div>
+          <div class="col"><div class="b" style="height:55%"></div><span>التمريض</span></div>
+          <div class="col"><div class="b alt" style="height:45%"></div><span>الصيدلة</span></div>
+          <div class="col"><div class="b" style="height:35%"></div><span>طب الأسنان</span></div>
+          <div class="col"><div class="b alt" style="height:25%"></div><span>العلوم</span></div>
+        </div></div></div>
+      <div class="card"><div class="card__head"><h3>حالة الطلبات وطنياً</h3></div>
+        <div class="card__body" style="text-align:center">
+          <div class="donut" style="margin:0 auto;background:conic-gradient(var(--green) 0 42%, var(--teal-500) 42% 68%, var(--amber) 68% 88%, var(--red) 88% 100%)">
+            <div class="hole"><b>148</b><span>طلب نشط</span></div></div>
+          <div class="legend" style="justify-content:center;margin-top:16px">
+            <span><i style="background:var(--green)"></i> معتمد 42%</span>
+            <span><i style="background:var(--teal-500)"></i> مراجعة 26%</span>
+            <span><i style="background:var(--amber)"></i> زيارة 20%</span>
+            <span><i style="background:var(--red)"></i> متعثر 12%</span>
+          </div></div></div>
+    </div>
+    <div class="card mt-24"><div class="card__head"><h3>أحدث انتهاكات مستوى الخدمة</h3><a href="sla.html" class="btn btn--ghost btn--sm">مراقبة SLA</a></div>
+      <div class="table-wrap"><table class="tbl">
+        <thead><tr><th>المجلس</th><th>الطلب</th><th>المرحلة</th><th>التأخير</th><th>الحالة</th></tr></thead>
+        <tbody>
+          <tr><td>الهندسة</td><td class="strong">ENG-2026-0029</td><td>مراجعة اللجنة</td><td><span class="badge red">+5 أيام</span></td><td><span class="badge amber">مُصعّد</span></td></tr>
+          <tr><td>الطب</td><td class="strong">MED-2026-0014</td><td>زيارة ميدانية</td><td><span class="badge red">+3 أيام</span></td><td><span class="badge red">مفتوح</span></td></tr>
+          <tr><td>التمريض</td><td class="strong">NUR-2026-0008</td><td>قرار نهائي</td><td><span class="badge amber">+1 يوم</span></td><td><span class="badge blue">قيد المتابعة</span></td></tr>
+        </tbody></table></div></div>
+    </div>
+  </div>
+</div>
+<script src="../assets/app.js"></script>
+</body>
+</html>

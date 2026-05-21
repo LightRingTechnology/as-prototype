@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>إنشاء مجلس — منصة الاعتماد الوطنية</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<div class="app">
+  <aside class="sidebar">
+    <div class="sidebar__brand">
+      <div class="sidebar__logo">و</div>
+      <div><b>منصة الاعتماد الوطنية</b><span>وزارة التعليم العالي والبحث العلمي</span></div>
+    </div>
+    <div class="sidebar__portal"><span>بوابة الوزارة</span><span class="dot" style="background:#c8a23c"></span></div>
+    <nav class="nav">
+      <div class="nav__label">القائمة الرئيسية</div>
+      <a href="dashboard.html" class=""><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/></svg><span>لوحة المعلومات</span></a>
+<div class="nav__label">الإشراف الوطني</div>
+      <a href="councils.html" class=""><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-5 9 5"/><path d="M4 9v10M20 9v10M9 9v10M15 9v10M3 21h18"/></svg><span>المجالس</span></a>
+      <a href="sla.html" class=""><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 18a8 8 0 1 1 16 0"/><path d="M12 14l4-3"/></svg><span>مراقبة مستوى الخدمة</span></a>
+      <a href="reports.html" class=""><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 20V4M4 20h16"/><rect x="7" y="11" width="3" height="6"/><rect x="12" y="7" width="3" height="10"/><rect x="17" y="13" width="3" height="4"/></svg><span>التقارير والإحصاءات</span></a>
+    </nav>
+    <div class="sidebar__foot">
+      <a href="../index.html"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 4L3 8l4 4"/><path d="M3 8h13a4 4 0 0 1 4 4"/><path d="M17 20l4-4-4-4"/><path d="M21 16H8a4 4 0 0 1-4-4"/></svg> تبديل البوابة</a>
+    </div>
+  </aside>
+  <div class="main">
+    <header class="topbar">
+      <button class="icon-btn hamburger" data-noop><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+      <div class="topbar__title">إنشاء مجلس<small>نموذج إنشاء مجلس اعتماد</small></div>
+      <div class="topbar__spacer"></div>
+      <div class="search"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4-4"/></svg><input placeholder="بحث في المنصة..." data-noop></div>
+      <button class="icon-btn" data-noop><svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9a6 6 0 1 1 12 0c0 6 2 7 2 7H4s2-1 2-7z"/><path d="M10 21h4"/></svg><span class="badge-dot"></span></button>
+      <div class="avatar">
+        <div class="avatar__img">أ.ر</div>
+        <div class="avatar__name">م. أحمد الراوي<span>مدير دائرة الاعتماد - الوزارة</span></div>
+      </div>
+    </header>
+    <div class="content">
+      <div class="crumb">بوابة الوزارة / <a href="councils.html">المجالس</a> / إنشاء مجلس</div>
+      
+    <div class="page-head"><div><h1>إنشاء مجلس اعتماد جديد</h1>
+    <p>تعريف مجلس جديد وفق مخطط council.council. تحدد فيه البيانات الأساسية ثم تُضاف البرامج والأعضاء لاحقاً من بوابة المجلس.</p></div>
+    <a href="councils.html" class="btn btn--ghost">→ رجوع للقائمة</a></div>
+    <div class="grid" style="grid-template-columns:2fr 1fr;align-items:start;">
+      <div>
+        <div class="card mb-24"><div class="card__head"><h3>المعلومات الأساسية</h3></div>
+          <div class="card__body">
+            <div class="form-row">
+              <div class="field"><label>الرمز (code) <span class="req">*</span></label><input class="input" dir="ltr" placeholder="مثال: ENG"><div class="hint">رمز فريد بالأحرف اللاتينية — لا يُكرّر بين المجالس</div></div>
+              <div class="field"><label>الحالة (status) <span class="req">*</span></label><select class="input"><option>قيد الإعداد</option><option>نشط</option><option>معطّل</option></select></div>
+            </div>
+            <div class="field"><label>الاسم (name) <span class="req">*</span></label><input class="input" placeholder="مثال: مجلس اعتماد الهندسة"></div>
+            <div class="field"><label>البريد الإلكتروني (email)</label><input class="input" dir="ltr" placeholder="council@mohesr.gov.iq"></div>
+            <div class="field"><label>نبذة (about)</label><textarea class="input" placeholder="وصف موجز لاختصاص المجلس ومسؤولياته..."></textarea></div>
+          </div></div>
+        <div class="card"><div class="card__head"><h3>الإعداد الأولي (اختياري)</h3><span class="badge grey badge--plain">يمكن تأجيله</span></div>
+          <div class="card__body">
+            <div class="field"><label>إضافة برامج أولية (council_program)</label>
+              <input class="input" placeholder="اكتب اسم البرنامج واضغط Enter" data-noop>
+              <div class="row wrap mt-8" style="gap:8px"><span class="tag">هندسة مدنية ✕</span><span class="tag">هندسة كهربائية ✕</span><span class="tag">+ إضافة</span></div></div>
+            <div class="divider"></div>
+            <div class="field"><label>تعيين رئيس المجلس (council_member · HEAD)</label>
+              <input class="input" placeholder="ابحث عن مستخدم بالاسم أو البريد..." data-noop></div>
+          </div></div>
+      </div>
+      <div>
+        <div class="card mb-24"><div class="card__head"><h3>الشعار</h3></div>
+          <div class="card__body" style="text-align:center">
+            <div class="dropzone"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-5 9 5"/><path d="M4 9v10M20 9v10M9 9v10M15 9v10M3 21h18"/></svg><div style="margin-top:8px">ارفع شعار المجلس</div><div class="muted" style="font-size:12px;margin-top:4px">PNG/SVG · 512×512</div></div>
+          </div></div>
+        <div class="notice info mb-16"><span>ℹ</span><div>بعد الإنشاء يُهيّأ للمجلس عميل (client) في Keycloak تلقائياً مع أدوار: رئيس المجلس، عضو، مُقيّم.</div></div>
+        <div class="card"><div class="card__body">
+          <button class="btn btn--navy" style="width:100%;justify-content:center" data-noop><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> إنشاء المجلس</button>
+          <a href="councils.html" class="btn btn--ghost mt-8" style="width:100%;justify-content:center">حفظ كمسودة</a>
+        </div></div>
+      </div>
+    </div>
+    </div>
+  </div>
+</div>
+<script src="../assets/app.js"></script>
+</body>
+</html>

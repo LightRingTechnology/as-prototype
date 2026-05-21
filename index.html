@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>منصة الاعتماد الوطنية — وزارة التعليم العالي والبحث العلمي</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+<style>
+  body{background:linear-gradient(180deg,#0b2447,#122f5c 60%,#0e2950);min-height:100vh;}
+  .land{max-width:1140px;margin:0 auto;padding:0 24px;}
+  .land__top{display:flex;align-items:center;gap:14px;padding:22px 0;color:#fff;}
+  .land__top .sidebar__logo{width:46px;height:46px;font-size:20px;}
+  .land__top b{display:block;font-size:16px;} .land__top span{font-size:12.5px;color:#93a6c4;}
+  .land__top .gov{margin-inline-start:auto;font-size:12.5px;color:#9fb2d0;border:1px solid rgba(255,255,255,.15);padding:7px 14px;border-radius:100px;}
+  .hero{text-align:center;color:#fff;padding:42px 0 8px;}
+  .hero h1{font-size:38px;font-weight:800;line-height:1.25;margin-bottom:14px;}
+  .hero h1 em{font-style:normal;color:#5fd0d0;}
+  .hero p{font-size:16px;color:#c2d1e8;max-width:680px;margin:0 auto;}
+  .pgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;margin:40px 0;}
+  @media(max-width:760px){.pgrid{grid-template-columns:1fr;}.hero h1{font-size:28px;}}
+  .pcard{background:#fff;border-radius:16px;padding:26px;box-shadow:0 10px 40px rgba(0,0,0,.18);transition:transform .15s,box-shadow .15s;display:block;}
+  .pcard:hover{transform:translateY(-4px);box-shadow:0 16px 50px rgba(0,0,0,.28);}
+  .pcard__ico{width:56px;height:56px;border-radius:14px;display:grid;place-items:center;margin-bottom:16px;}
+  .pcard__ico .ico{width:26px;height:26px;}
+  .pcard h3{font-size:19px;margin-bottom:8px;color:var(--ink);}
+  .pcard p{font-size:13.5px;color:var(--muted);line-height:1.65;margin-bottom:16px;}
+  .pcard__go{font-size:13.5px;font-weight:700;}
+  .feats{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:16px;padding:26px;display:grid;grid-template-columns:repeat(2,1fr);gap:22px;margin-bottom:40px;}
+  @media(max-width:760px){.feats{grid-template-columns:1fr;}}
+  .feat{display:flex;gap:12px;}
+  .feat__ico{width:34px;height:34px;border-radius:9px;background:rgba(95,208,208,.16);color:#5fd0d0;display:grid;place-items:center;flex:none;}
+  .feat__ico .ico{width:18px;height:18px;}
+  .feat b{color:#fff;font-size:14.5px;} .feat p{color:#a8bcd9;font-size:12.5px;margin-top:3px;}
+  .land__foot{text-align:center;color:#7e92b3;font-size:12.5px;padding:22px 0 40px;}
+</style>
+</head>
+<body>
+<div class="land">
+  <div class="land__top">
+    <div class="sidebar__logo">و</div>
+    <div><b>منصة الاعتماد الوطنية</b><span>وزارة التعليم العالي والبحث العلمي</span></div>
+    <span class="gov">نموذج أوّلي تفاعلي · Prototype</span>
+  </div>
+  <div class="hero">
+    <h1>منصة وطنية موحّدة لإدارة <em>الاعتماد الأكاديمي</em></h1>
+    <p>بنية متمحورة حول مجالس الاعتماد، تربط المؤسسات والمُقيّمين والمجالس والوزارة في دورة اعتماد واحدة قابلة للتتبّع.</p>
+  </div>
+  <div class="pgrid"><a class="pcard" href="institution/dashboard.html">
+          <div class="pcard__ico" style="background:#e7f0fd;color:#2563c9"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-5 9 5"/><path d="M4 9v10M20 9v10M9 9v10M15 9v10M3 21h18"/></svg></div>
+          <h3>بوابة المؤسسة</h3><p>تقديم طلبات الاعتماد، اختيار البرنامج والدورة، رفع المستندات وتتبّع الحالة.</p>
+          <span class="pcard__go" style="color:#2563c9">الدخول إلى البوابة ←</span>
+        </a><a class="pcard" href="council/dashboard.html">
+          <div class="pcard__ico" style="background:#e6f4f4;color:#128f8f"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 5a2 2 0 0 1 2-2h12v18H6a2 2 0 0 1-2-2z"/><path d="M8 3v18"/></svg></div>
+          <h3>بوابة المجلس</h3><p>إدارة البرامج والأعضاء والتعاميم والإصدارات ودورات الاعتماد.</p>
+          <span class="pcard__go" style="color:#128f8f">الدخول إلى البوابة ←</span>
+        </a><a class="pcard" href="reviewer/dashboard.html">
+          <div class="pcard__ico" style="background:#efe9fb;color:#6b46c1"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg></div>
+          <h3>بوابة المُقيّم</h3><p>مراجعة الطلبات المُسندة، التقييم وفق المعايير، والزيارات الميدانية.</p>
+          <span class="pcard__go" style="color:#6b46c1">الدخول إلى البوابة ←</span>
+        </a><a class="pcard" href="admin/dashboard.html">
+          <div class="pcard__ico" style="background:#f7f0db;color:#c8a23c"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 18a8 8 0 1 1 16 0"/><path d="M12 14l4-3"/></svg></div>
+          <h3>بوابة الوزارة</h3><p>الإشراف الوطني على المجالس، مراقبة مستوى الخدمة، والتقارير والإحصاءات.</p>
+          <span class="pcard__go" style="color:#c8a23c">الدخول إلى البوابة ←</span>
+        </a></div>
+  <div class="feats"><div class="feat"><div class="feat__ico"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg></div><div><b>تصميم متمحور حول المجالس</b><p>كل مجلس يدير برامجه ومعاييره ودوراته باستقلالية تامة.</p></div></div><div class="feat"><div class="feat__ico"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg></div><div><b>تتبّع على مستوى البرنامج</b><p>كل طلب مرتبط بمؤسسة ودورة وبرنامج لضمان التتبّع القانوني والتاريخي.</p></div></div><div class="feat"><div class="feat__ico"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg></div><div><b>إصدارات معايير محفوظة</b><p>لا يُكتب فوق أي إصدار — يُقيَّم كل طلب وفق الإصدار الفعّال وقت تقديمه.</p></div></div><div class="feat"><div class="feat__ico"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg></div><div><b>حوكمة مستوى الخدمة</b><p>مواعيد نهائية وتصعيد آلي عبر مؤقتات سير العمل والمهام المجدولة.</p></div></div></div>
+  <div class="land__foot">نموذج تصميم أوّلي للعرض — البيانات الظاهرة توضيحية فقط · MOHESR National Accreditation Platform</div>
+</div>
+</body></html>
