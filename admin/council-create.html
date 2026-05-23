@@ -64,10 +64,50 @@
               <input class="input" placeholder="اكتب اسم البرنامج واضغط Enter" data-noop>
               <div class="row wrap mt-8" style="gap:8px"><span class="tag">هندسة مدنية ✕</span><span class="tag">هندسة كهربائية ✕</span><span class="tag">+ إضافة</span></div></div>
             <div class="divider"></div>
-            <div class="field"><label>تعيين رئيس المجلس (council_member · HEAD)</label>
-              <input class="input" placeholder="ابحث عن مستخدم بالاسم أو البريد..." data-noop></div>
+            <label style="display:block;font-size:13px;font-weight:600;margin-bottom:6px">أعضاء المجلس (council_member)</label>
+            <div class="hint mb-8">أضف الأعضاء الآن أو لاحقاً من بوابة المجلس. يُسمح برئيس واحد فقط لكل مجلس.</div>
+            <div class="form-row" style="grid-template-columns:1.6fr 1fr auto;align-items:end;gap:10px">
+              <div class="field" style="margin:0"><label>الاسم الكامل</label><input id="mName" class="input" placeholder="مثال: د. سالم العبيدي"></div>
+              <div class="field" style="margin:0"><label>نوع العضوية</label>
+                <select id="mType" class="input"><option value="MEMBER">عضو</option><option value="HEAD">رئيس المجلس</option></select></div>
+              <button class="btn btn--soft" onclick="addMember()"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg> إضافة</button>
+            </div>
+            <div class="table-wrap mt-16"><table class="tbl" id="memberTbl">
+              <thead><tr><th>#</th><th>الاسم</th><th>نوع العضوية</th><th></th></tr></thead>
+              <tbody id="memberList">
+                <tr><td class="muted">1</td><td class="strong">د. سالم العبيدي</td><td><span class="badge teal">رئيس المجلس</span></td>
+                <td><button class="btn btn--danger btn--sm" onclick="this.closest('tr').remove();renumber()">إزالة</button></td></tr>
+                <tr><td class="muted">2</td><td class="strong">أ.د. ليلى الكناني</td><td><span class="badge grey badge--plain">عضو</span></td>
+                <td><button class="btn btn--danger btn--sm" onclick="this.closest('tr').remove();renumber()">إزالة</button></td></tr>
+              </tbody>
+            </table></div>
+            <div class="muted mt-8" style="font-size:12.5px">إجمالي الأعضاء: <b id="memberCount">2</b></div>
           </div></div>
       </div>
+      <script>
+        function renumber(){
+          var rows=document.querySelectorAll('#memberList tr');
+          rows.forEach(function(r,i){ r.children[0].textContent=i+1; });
+          document.getElementById('memberCount').textContent=rows.length;
+        }
+        function addMember(){
+          var name=document.getElementById('mName').value.trim();
+          var type=document.getElementById('mType').value;
+          if(!name){ document.getElementById('mName').focus(); return; }
+          if(type==='HEAD' && document.querySelector('#memberList .badge.teal')){
+            alert('يوجد رئيس مجلس بالفعل — يُسمح برئيس واحد فقط.'); return;
+          }
+          var badge = type==='HEAD'
+            ? '<span class="badge teal">رئيس المجلس</span>'
+            : '<span class="badge grey badge--plain">عضو</span>';
+          var tr=document.createElement('tr');
+          tr.innerHTML='<td class="muted"></td><td class="strong">'+name+'</td><td>'+badge+'</td>'+
+            '<td><button class="btn btn--danger btn--sm" onclick="this.closest(\'tr\').remove();renumber()">إزالة</button></td>';
+          document.getElementById('memberList').appendChild(tr);
+          document.getElementById('mName').value=''; document.getElementById('mName').focus();
+          renumber();
+        }
+      </script>
       <div>
         <div class="card mb-24"><div class="card__head"><h3>الشعار</h3></div>
           <div class="card__body" style="text-align:center">
