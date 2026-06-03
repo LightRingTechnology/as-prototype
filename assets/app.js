@@ -1,3 +1,25 @@
+// Load shared portal menu.html into sidebars (single source for nav links)
+function loadPortalMenu() {
+  const nav = document.querySelector('nav.nav[data-include]');
+  if (!nav) return;
+  const src = nav.getAttribute('data-include');
+  const active = nav.getAttribute('data-active') || location.pathname.split('/').pop() || '';
+  fetch(src)
+    .then(function (r) { return r.ok ? r.text() : Promise.reject(); })
+    .then(function (html) {
+      nav.innerHTML = html;
+      if (active) {
+        nav.querySelectorAll('a[href]').forEach(function (a) {
+          const href = (a.getAttribute('href') || '').split('#')[0].split('?')[0];
+          if (href === active) a.classList.add('active');
+        });
+      }
+    })
+    .catch(function () { /* keep build-time inline fallback */ });
+}
+
+document.addEventListener('DOMContentLoaded', loadPortalMenu);
+
 // Shared prototype behaviour
 document.addEventListener('click', function (e) {
   // sidebar toggle (mobile)
