@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>قالب خطوات البرنامج — منصة الاعتماد الوطنية</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<div class="app">
+  <aside class="sidebar">
+    <div class="sidebar__brand">
+      <div class="sidebar__logo">و</div>
+      <div><b>منصة الاعتماد الوطنية</b><span>وزارة التعليم العالي والبحث العلمي</span></div>
+    </div>
+    <div class="sidebar__portal"><span>بوابة المجلس</span><span class="dot" style="background:#128f8f"></span></div>
+    <nav class="nav">
+      <div class="nav__label">القائمة الرئيسية</div>
+      <a href="dashboard.html" class=""><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/></svg><span>لوحة المعلومات</span></a>
+<div class="nav__label">بيانات المجلس</div>
+      <a href="settings.html" class=""><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-5 9 5"/><path d="M4 9v10M20 9v10M9 9v10M15 9v10M3 21h18"/></svg><span>ملف المجلس</span></a>
+      <a href="programs.html" class=""><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 5a2 2 0 0 1 2-2h12v18H6a2 2 0 0 1-2-2z"/><path d="M8 3v18"/></svg><span>البرامج والتخصصات</span></a>
+      <a href="members.html" class=""><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="8" r="3"/><path d="M3 20c0-3 3-5 6-5s6 2 6 5"/><path d="M16 6a3 3 0 0 1 0 6M21 20c0-2.2-1.5-3.8-3.5-4.5"/></svg><span>أعضاء المجلس</span></a>
+      <a href="circulars.html" class=""><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg><span>التعاميم</span></a>
+      <a href="publications.html" class=""><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l9 5-9 5-9-5z"/><path d="M3 13l9 5 9-5"/></svg><span>الإصدارات والمعايير</span></a>
+      <a href="cycles.html" class=""><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M3 9h18M8 2v4M16 2v4"/></svg><span>دورات الاعتماد</span></a>
+<div class="nav__label">الاعتماد</div>
+      <a href="applications.html" class=""><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="6" y="4" width="12" height="17" rx="2"/><path d="M9 4V3h6v1"/><path d="M9 10h6M9 14h6"/></svg><span>طلبات الاعتماد</span></a>
+      <a href="step-review.html" class=""><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg><span>مراجعة الخطوات</span></a>
+    </nav>
+    <div class="sidebar__foot">
+      <a href="../index.html"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 4L3 8l4 4"/><path d="M3 8h13a4 4 0 0 1 4 4"/><path d="M17 20l4-4-4-4"/><path d="M21 16H8a4 4 0 0 1-4-4"/></svg> تبديل البوابة</a>
+    </div>
+  </aside>
+  <div class="main">
+    <header class="topbar">
+      <button class="icon-btn hamburger" data-noop><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+      <div class="topbar__title">قالب خطوات البرنامج<small>بنّاء قالب الخطوات لكل برنامج</small></div>
+      <div class="topbar__spacer"></div>
+      <div class="search"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4-4"/></svg><input placeholder="بحث في المنصة..." data-noop></div>
+      <button class="icon-btn" data-noop><svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9a6 6 0 1 1 12 0c0 6 2 7 2 7H4s2-1 2-7z"/><path d="M10 21h4"/></svg><span class="badge-dot"></span></button>
+      <div class="avatar">
+        <div class="avatar__img">س.ع</div>
+        <div class="avatar__name">د. سالم العبيدي<span>رئيس مجلس اعتماد الهندسة</span></div>
+      </div>
+    </header>
+    <div class="content">
+      <div class="crumb">بوابة المجلس / <a href="programs.html">البرامج</a> / قالب خطوات البرنامج</div>
+      
+    <div class="page-head"><div><h1 id="proghdr">قالب خطوات البرنامج — هندسة مدنية (CIVIL-ENG)</h1>
+    <p>قائمة خطوات قابلة لإعادة الاستخدام يعرّفها رئيس المجلس لكل برنامج. الخطوات <b>متسلسلة</b> افتراضياً، وكل خطوة تربط بمعايير من إصدار المعايير الفعّال.</p></div>
+    <div class="row"><a href="programs.html" class="btn btn--ghost">→ البرامج</a><button class="btn btn--primary" data-noop><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> حفظ القالب</button></div></div>
+
+    <div class="notice info mb-24"><span>ℹ</span><div>هذا القالب (<code>council.program_step_template</code>) هو المصدر الأساسي للخطوات. عند إنشاء طلب اعتماد جديد يُلتقط <b>سناب‌شوت</b> من القالب لينعزل الطلب عن أي تعديل لاحق. الدورات قد تُجري <b>استثناءات</b> دون تعديل القالب الأصل.</div></div>
+
+    <div class="grid" style="grid-template-columns:1.6fr 1fr;align-items:start;gap:18px">
+      <div>
+        <div class="card mb-16"><div class="card__head"><h3>الخطوات المعرّفة (7)</h3>
+          <button class="btn btn--primary btn--sm" data-noop><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg> خطوة جديدة</button></div>
+          <div class="card__body"><div class="card" style="margin-bottom:10px">
+          <div class="card__body row" style="gap:14px;align-items:flex-start">
+            <div style="width:32px;height:32px;border-radius:50%;background:var(--teal-500);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;flex:0 0 auto">1</div>
+            <div style="flex:1">
+              <div class="row" style="gap:8px;flex-wrap:wrap;align-items:center"><b style="font-size:14.5px">تهيئة وفتح الطلب</b><span class="muted" dir="ltr" style="font-size:12px">Open Application</span></div>
+              <div class="row" style="gap:8px;flex-wrap:wrap;margin-top:6px">
+                <span class="badge teal badge--plain">مُقيّم المجلس</span>
+                <span class="tag">2 معيار مرتبط</span>
+                <span class="muted" style="font-size:11.5px">step_template_indicator: 2</span>
+              </div>
+            </div>
+            <div class="row" style="gap:6px;flex:0 0 auto">
+              <button class="btn btn--ghost btn--sm" data-noop><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 20h4l11-11a2.5 2.5 0 0 0-3.5-3.5L4 16z"/><path d="M13 7l4 4"/></svg> تعديل</button>
+              <button class="btn btn--ghost btn--sm" data-noop>↕ ترتيب</button>
+            </div>
+          </div></div><div class="card" style="margin-bottom:10px">
+          <div class="card__body row" style="gap:14px;align-items:flex-start">
+            <div style="width:32px;height:32px;border-radius:50%;background:var(--teal-500);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;flex:0 0 auto">2</div>
+            <div style="flex:1">
+              <div class="row" style="gap:8px;flex-wrap:wrap;align-items:center"><b style="font-size:14.5px">التقييم الذاتي (SAR)</b><span class="muted" dir="ltr" style="font-size:12px">Self-Assessment Report</span></div>
+              <div class="row" style="gap:8px;flex-wrap:wrap;margin-top:6px">
+                <span class="badge purple badge--plain">لجنة (نصاب مطلوب)</span>
+                <span class="tag">6 معيار مرتبط</span>
+                <span class="muted" style="font-size:11.5px">step_template_indicator: 6</span>
+              </div>
+            </div>
+            <div class="row" style="gap:6px;flex:0 0 auto">
+              <button class="btn btn--ghost btn--sm" data-noop><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 20h4l11-11a2.5 2.5 0 0 0-3.5-3.5L4 16z"/><path d="M13 7l4 4"/></svg> تعديل</button>
+              <button class="btn btn--ghost btn--sm" data-noop>↕ ترتيب</button>
+            </div>
+          </div></div><div class="card" style="margin-bottom:10px">
+          <div class="card__body row" style="gap:14px;align-items:flex-start">
+            <div style="width:32px;height:32px;border-radius:50%;background:var(--teal-500);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;flex:0 0 auto">3</div>
+            <div style="flex:1">
+              <div class="row" style="gap:8px;flex-wrap:wrap;align-items:center"><b style="font-size:14.5px">رفع الأدلة وربطها</b><span class="muted" dir="ltr" style="font-size:12px">Evidence Upload & Mapping</span></div>
+              <div class="row" style="gap:8px;flex-wrap:wrap;margin-top:6px">
+                <span class="badge purple badge--plain">لجنة (نصاب مطلوب)</span>
+                <span class="tag">6 معيار مرتبط</span>
+                <span class="muted" style="font-size:11.5px">step_template_indicator: 6</span>
+              </div>
+            </div>
+            <div class="row" style="gap:6px;flex:0 0 auto">
+              <button class="btn btn--ghost btn--sm" data-noop><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 20h4l11-11a2.5 2.5 0 0 0-3.5-3.5L4 16z"/><path d="M13 7l4 4"/></svg> تعديل</button>
+              <button class="btn btn--ghost btn--sm" data-noop>↕ ترتيب</button>
+            </div>
+          </div></div><div class="card" style="margin-bottom:10px">
+          <div class="card__body row" style="gap:14px;align-items:flex-start">
+            <div style="width:32px;height:32px;border-radius:50%;background:var(--teal-500);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;flex:0 0 auto">4</div>
+            <div style="flex:1">
+              <div class="row" style="gap:8px;flex-wrap:wrap;align-items:center"><b style="font-size:14.5px">المراجعة المكتبية</b><span class="muted" dir="ltr" style="font-size:12px">Desk Review</span></div>
+              <div class="row" style="gap:8px;flex-wrap:wrap;margin-top:6px">
+                <span class="badge teal badge--plain">مُقيّم المجلس</span>
+                <span class="tag">6 معيار مرتبط</span>
+                <span class="muted" style="font-size:11.5px">step_template_indicator: 6</span>
+              </div>
+            </div>
+            <div class="row" style="gap:6px;flex:0 0 auto">
+              <button class="btn btn--ghost btn--sm" data-noop><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 20h4l11-11a2.5 2.5 0 0 0-3.5-3.5L4 16z"/><path d="M13 7l4 4"/></svg> تعديل</button>
+              <button class="btn btn--ghost btn--sm" data-noop>↕ ترتيب</button>
+            </div>
+          </div></div><div class="card" style="margin-bottom:10px">
+          <div class="card__body row" style="gap:14px;align-items:flex-start">
+            <div style="width:32px;height:32px;border-radius:50%;background:var(--teal-500);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;flex:0 0 auto">5</div>
+            <div style="flex:1">
+              <div class="row" style="gap:8px;flex-wrap:wrap;align-items:center"><b style="font-size:14.5px">الزيارة الميدانية</b><span class="muted" dir="ltr" style="font-size:12px">Site Visit</span></div>
+              <div class="row" style="gap:8px;flex-wrap:wrap;margin-top:6px">
+                <span class="badge blue badge--plain">لجنة خبراء</span>
+                <span class="tag">4 معيار مرتبط</span>
+                <span class="muted" style="font-size:11.5px">step_template_indicator: 4</span>
+              </div>
+            </div>
+            <div class="row" style="gap:6px;flex:0 0 auto">
+              <button class="btn btn--ghost btn--sm" data-noop><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 20h4l11-11a2.5 2.5 0 0 0-3.5-3.5L4 16z"/><path d="M13 7l4 4"/></svg> تعديل</button>
+              <button class="btn btn--ghost btn--sm" data-noop>↕ ترتيب</button>
+            </div>
+          </div></div><div class="card" style="margin-bottom:10px">
+          <div class="card__body row" style="gap:14px;align-items:flex-start">
+            <div style="width:32px;height:32px;border-radius:50%;background:var(--teal-500);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;flex:0 0 auto">6</div>
+            <div style="flex:1">
+              <div class="row" style="gap:8px;flex-wrap:wrap;align-items:center"><b style="font-size:14.5px">التقييم النهائي والحكم</b><span class="muted" dir="ltr" style="font-size:12px">Final Scoring & Judgment</span></div>
+              <div class="row" style="gap:8px;flex-wrap:wrap;margin-top:6px">
+                <span class="badge purple badge--plain">لجنة (نصاب مطلوب)</span>
+                <span class="tag">6 معيار مرتبط</span>
+                <span class="muted" style="font-size:11.5px">step_template_indicator: 6</span>
+              </div>
+            </div>
+            <div class="row" style="gap:6px;flex:0 0 auto">
+              <button class="btn btn--ghost btn--sm" data-noop><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 20h4l11-11a2.5 2.5 0 0 0-3.5-3.5L4 16z"/><path d="M13 7l4 4"/></svg> تعديل</button>
+              <button class="btn btn--ghost btn--sm" data-noop>↕ ترتيب</button>
+            </div>
+          </div></div><div class="card" style="margin-bottom:10px">
+          <div class="card__body row" style="gap:14px;align-items:flex-start">
+            <div style="width:32px;height:32px;border-radius:50%;background:var(--teal-500);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;flex:0 0 auto">7</div>
+            <div style="flex:1">
+              <div class="row" style="gap:8px;flex-wrap:wrap;align-items:center"><b style="font-size:14.5px">قرار المجلس</b><span class="muted" dir="ltr" style="font-size:12px">Council Decision</span></div>
+              <div class="row" style="gap:8px;flex-wrap:wrap;margin-top:6px">
+                <span class="badge teal badge--plain">مُقيّم المجلس</span>
+                <span class="tag">0 معيار مرتبط</span>
+                <span class="muted" style="font-size:11.5px">step_template_indicator: 0</span>
+              </div>
+            </div>
+            <div class="row" style="gap:6px;flex:0 0 auto">
+              <button class="btn btn--ghost btn--sm" data-noop><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 20h4l11-11a2.5 2.5 0 0 0-3.5-3.5L4 16z"/><path d="M13 7l4 4"/></svg> تعديل</button>
+              <button class="btn btn--ghost btn--sm" data-noop>↕ ترتيب</button>
+            </div>
+          </div></div></div></div>
+      </div>
+      <div>
+        <div class="card mb-16"><div class="card__head"><h3>إضافة / تعديل خطوة</h3></div>
+          <div class="card__body">
+            <div class="form-row">
+              <div class="field"><label>رقم الخطوة (step_number) <span class="req">*</span></label><input class="input" type="number" value="8" dir="ltr"></div>
+              <div class="field"><label>الحالة</label><select class="input"><option>مُفعّلة</option><option>معطّلة</option></select></div>
+            </div>
+            <div class="field"><label>الاسم — عربي <span class="req">*</span></label><input class="input" placeholder="مثال: المتابعة السنوية"></div>
+            <div class="field"><label>الاسم — إنجليزي</label><input class="input" dir="ltr" placeholder="e.g. Annual Follow-up"></div>
+            <div class="field"><label>الوصف</label><textarea class="input" placeholder="وصف موجز لما يجب على المؤسسة تقديمه في هذه الخطوة..."></textarea></div>
+            <div class="field"><label>نوع المراجع (reviewer_type) <span class="req">*</span></label>
+              <select class="input"><option >COUNCIL_REVIEWER — مُقيّم المجلس</option><option selected>COMMITTEE — لجنة (نصاب مطلوب)</option><option >EXPERT_PANEL — لجنة خبراء</option></select>
+              <div class="hint">COUNCIL_REVIEWER = مُقيّم واحد · COMMITTEE = نصاب جماعي · EXPERT_PANEL = خبراء.</div></div>
+            <div class="divider"></div>
+            <label style="font-size:12.5px;font-weight:600">المعايير المرتبطة (step_template_indicator)</label>
+            <div class="dropzone mt-8">اربط من شجرة المعايير v3<div class="muted" style="font-size:12px;margin-top:6px">يمكنك ربط معايير جزئية من أي مجموعة أو معيار</div></div>
+            <div class="row" style="gap:8px;margin-top:14px"><button class="btn btn--ghost" data-noop>إلغاء</button><button class="btn btn--primary" data-noop>حفظ الخطوة</button></div>
+          </div></div>
+
+        <div class="card"><div class="card__head"><h3>أنواع المراجع</h3></div>
+          <div class="card__body"><div class="between" style="padding:8px 0;border-bottom:1px solid var(--line-2)"><span class="tag" dir="ltr">COUNCIL_REVIEWER</span><span class="badge teal badge--plain">مُقيّم المجلس</span></div><div class="between" style="padding:8px 0;border-bottom:1px solid var(--line-2)"><span class="tag" dir="ltr">COMMITTEE</span><span class="badge purple badge--plain">لجنة (نصاب مطلوب)</span></div><div class="between" style="padding:8px 0;border-bottom:1px solid var(--line-2)"><span class="tag" dir="ltr">EXPERT_PANEL</span><span class="badge blue badge--plain">لجنة خبراء</span></div></div></div>
+      </div>
+    </div>
+    <script>(function(){var p=new URLSearchParams(location.search).get('prog');
+      if(p){var h=document.getElementById('proghdr'); if(h) h.textContent='قالب خطوات البرنامج — '+p;}})();</script>
+    </div>
+  </div>
+</div>
+<script src="../assets/app.js"></script>
+</body>
+</html>

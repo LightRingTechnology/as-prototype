@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>مراجعة الخطوات — منصة الاعتماد الوطنية</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<div class="app">
+  <aside class="sidebar">
+    <div class="sidebar__brand">
+      <div class="sidebar__logo">و</div>
+      <div><b>منصة الاعتماد الوطنية</b><span>وزارة التعليم العالي والبحث العلمي</span></div>
+    </div>
+    <div class="sidebar__portal"><span>بوابة المجلس</span><span class="dot" style="background:#128f8f"></span></div>
+    <nav class="nav">
+      <div class="nav__label">القائمة الرئيسية</div>
+      <a href="dashboard.html" class=""><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/></svg><span>لوحة المعلومات</span></a>
+<div class="nav__label">بيانات المجلس</div>
+      <a href="settings.html" class=""><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-5 9 5"/><path d="M4 9v10M20 9v10M9 9v10M15 9v10M3 21h18"/></svg><span>ملف المجلس</span></a>
+      <a href="programs.html" class=""><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 5a2 2 0 0 1 2-2h12v18H6a2 2 0 0 1-2-2z"/><path d="M8 3v18"/></svg><span>البرامج والتخصصات</span></a>
+      <a href="members.html" class=""><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="8" r="3"/><path d="M3 20c0-3 3-5 6-5s6 2 6 5"/><path d="M16 6a3 3 0 0 1 0 6M21 20c0-2.2-1.5-3.8-3.5-4.5"/></svg><span>أعضاء المجلس</span></a>
+      <a href="circulars.html" class=""><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg><span>التعاميم</span></a>
+      <a href="publications.html" class=""><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l9 5-9 5-9-5z"/><path d="M3 13l9 5 9-5"/></svg><span>الإصدارات والمعايير</span></a>
+      <a href="cycles.html" class=""><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M3 9h18M8 2v4M16 2v4"/></svg><span>دورات الاعتماد</span></a>
+<div class="nav__label">الاعتماد</div>
+      <a href="applications.html" class=""><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="6" y="4" width="12" height="17" rx="2"/><path d="M9 4V3h6v1"/><path d="M9 10h6M9 14h6"/></svg><span>طلبات الاعتماد</span></a>
+      <a href="step-review.html" class="active"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg><span>مراجعة الخطوات</span></a>
+    </nav>
+    <div class="sidebar__foot">
+      <a href="../index.html"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 4L3 8l4 4"/><path d="M3 8h13a4 4 0 0 1 4 4"/><path d="M17 20l4-4-4-4"/><path d="M21 16H8a4 4 0 0 1-4-4"/></svg> تبديل البوابة</a>
+    </div>
+  </aside>
+  <div class="main">
+    <header class="topbar">
+      <button class="icon-btn hamburger" data-noop><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+      <div class="topbar__title">مراجعة الخطوات<small>بوابة قرار الخطوة</small></div>
+      <div class="topbar__spacer"></div>
+      <div class="search"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4-4"/></svg><input placeholder="بحث في المنصة..." data-noop></div>
+      <button class="icon-btn" data-noop><svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9a6 6 0 1 1 12 0c0 6 2 7 2 7H4s2-1 2-7z"/><path d="M10 21h4"/></svg><span class="badge-dot"></span></button>
+      <div class="avatar">
+        <div class="avatar__img">س.ع</div>
+        <div class="avatar__name">د. سالم العبيدي<span>رئيس مجلس اعتماد الهندسة</span></div>
+      </div>
+    </header>
+    <div class="content">
+      <div class="crumb">بوابة المجلس / <a href="applications.html">طلبات الاعتماد</a> / مراجعة الخطوات</div>
+      
+    <div class="page-head"><div><h1 id="rvhdr">مراجعة خطوة — ENG-2026-0048</h1>
+    <p id="rvsub">الجامعة المستنصرية · هندسة كهربائية وإلكترونية · الخطوة 5 — تقرير التقييم الذاتي</p></div>
+    <div class="row"><span class="badge blue">بانتظار قرار المجلس</span><a href="applications.html" class="btn btn--ghost">→ الطلبات</a></div></div>
+
+    <div class="notice info mb-24"><span>🔁</span><div>أرسلت المؤسسة هذه الخطوة بعد استيفاء معاييرها. قرار المجلس يحكم التقدّم — ثلاثة قرارات ممكنة:
+      <b>ACCEPTED</b> (فتح الخطوة التالية) · <b>CHANGE_REQUESTED</b> (إعادة هذه الخطوة فقط، iteration+1) · <b>LOOPED_BACK</b> (إعادة لخطوة سابقة M، تُصفَّر كل الخطوات من M إلى N). كل قرار يُسجَّل في <code>application_step_history</code>.</div></div>
+
+    <div class="grid" style="grid-template-columns:1.6fr 1fr;align-items:start;">
+      <div>
+        <div class="card mb-24"><div class="card__head"><h3>معايير الخطوة المُرسَلة</h3><span class="muted" style="font-size:12.5px">6 معايير</span></div>
+          <div class="card__body"><div class="between" style="padding:13px 0;border-bottom:1px solid var(--line-2);gap:12px;align-items:flex-start">
+          <div style="flex:1"><span class="tag">STD-5.1</span> <b style="font-size:13.5px;margin-inline-start:6px">أهداف ومخرجات البرنامج</b>
+            <div class="muted" style="font-size:11.5px;margin-top:4px">إقرار المؤسسة: <span class="badge green badge--plain">مطابق</span> · <a href="#" data-noop>عرض الدليل</a></div></div>
+          <select class="input" style="width:auto;flex:0 0 auto"><option selected>مقبول</option><option >تعديل بسيط</option><option >مرفوض</option></select>
+        </div><div class="between" style="padding:13px 0;border-bottom:1px solid var(--line-2);gap:12px;align-items:flex-start">
+          <div style="flex:1"><span class="tag">STD-5.2</span> <b style="font-size:13.5px;margin-inline-start:6px">المنهج الدراسي وتوصيف المقررات</b>
+            <div class="muted" style="font-size:11.5px;margin-top:4px">إقرار المؤسسة: <span class="badge green badge--plain">مطابق</span> · <a href="#" data-noop>عرض الدليل</a></div></div>
+          <select class="input" style="width:auto;flex:0 0 auto"><option selected>مقبول</option><option >تعديل بسيط</option><option >مرفوض</option></select>
+        </div><div class="between" style="padding:13px 0;border-bottom:1px solid var(--line-2);gap:12px;align-items:flex-start">
+          <div style="flex:1"><span class="tag">STD-5.3</span> <b style="font-size:13.5px;margin-inline-start:6px">هيئة التدريس والكوادر</b>
+            <div class="muted" style="font-size:11.5px;margin-top:4px">إقرار المؤسسة: <span class="badge amber badge--plain">مطابقة جزئية</span> · <a href="#" data-noop>عرض الدليل</a></div></div>
+          <select class="input" style="width:auto;flex:0 0 auto"><option >مقبول</option><option selected>تعديل بسيط</option><option >مرفوض</option></select>
+        </div><div class="between" style="padding:13px 0;border-bottom:1px solid var(--line-2);gap:12px;align-items:flex-start">
+          <div style="flex:1"><span class="tag">STD-5.4</span> <b style="font-size:13.5px;margin-inline-start:6px">المرافق والمختبرات والتجهيزات</b>
+            <div class="muted" style="font-size:11.5px;margin-top:4px">إقرار المؤسسة: <span class="badge red badge--plain">غير مطابق</span> · <a href="#" data-noop>عرض الدليل</a></div></div>
+          <select class="input" style="width:auto;flex:0 0 auto"><option >مقبول</option><option >تعديل بسيط</option><option selected>مرفوض</option></select>
+        </div><div class="between" style="padding:13px 0;border-bottom:1px solid var(--line-2);gap:12px;align-items:flex-start">
+          <div style="flex:1"><span class="tag">STD-5.5</span> <b style="font-size:13.5px;margin-inline-start:6px">ضمان الجودة والتحسين المستمر</b>
+            <div class="muted" style="font-size:11.5px;margin-top:4px">إقرار المؤسسة: <span class="badge green badge--plain">مطابق</span> · <a href="#" data-noop>عرض الدليل</a></div></div>
+          <select class="input" style="width:auto;flex:0 0 auto"><option selected>مقبول</option><option >تعديل بسيط</option><option >مرفوض</option></select>
+        </div><div class="between" style="padding:13px 0;border-bottom:1px solid var(--line-2);gap:12px;align-items:flex-start">
+          <div style="flex:1"><span class="tag">STD-5.6</span> <b style="font-size:13.5px;margin-inline-start:6px">شؤون الطلبة والدعم الأكاديمي</b>
+            <div class="muted" style="font-size:11.5px;margin-top:4px">إقرار المؤسسة: <span class="badge amber badge--plain">مطابقة جزئية</span> · <a href="#" data-noop>عرض الدليل</a></div></div>
+          <select class="input" style="width:auto;flex:0 0 auto"><option >مقبول</option><option selected>تعديل بسيط</option><option >مرفوض</option></select>
+        </div>
+            <div class="field mt-16"><label>ملاحظة عامة للمراجعة</label><textarea class="input" placeholder="ملاحظات المجلس على الخطوة ككل..."></textarea></div>
+          </div></div>
+      </div>
+      <div>
+        <div class="card mb-16"><div class="card__head"><h3>قائمة الانتظار</h3><span class="badge amber">3</span></div>
+          <div class="card__body"><a href="step-review.html?app=ENG-2026-0048" class="card" style="display:block;margin-bottom:8px;text-decoration:none;border-color:var(--teal-500);background:var(--teal-50,#eafafa)">
+          <div class="card__body" style="padding:12px 14px">
+            <div class="between"><b style="font-size:13px">ENG-2026-0048</b><span class="muted" style="font-size:11.5px">اليوم</span></div>
+            <div class="muted" style="font-size:12px;margin-top:3px">الجامعة المستنصرية</div>
+            <div style="font-size:12.5px;margin-top:4px">الخطوة 5 — التقييم الذاتي</div>
+          </div></a><a href="step-review.html?app=ENG-2026-0036" class="card" style="display:block;margin-bottom:8px;text-decoration:none;">
+          <div class="card__body" style="padding:12px 14px">
+            <div class="between"><b style="font-size:13px">ENG-2026-0036</b><span class="muted" style="font-size:11.5px">أمس</span></div>
+            <div class="muted" style="font-size:12px;margin-top:3px">جامعة الموصل</div>
+            <div style="font-size:12.5px;margin-top:4px">الخطوة 6 — رفع الأدلة</div>
+          </div></a><a href="step-review.html?app=ENG-2026-0030" class="card" style="display:block;margin-bottom:8px;text-decoration:none;">
+          <div class="card__body" style="padding:12px 14px">
+            <div class="between"><b style="font-size:13px">ENG-2026-0030</b><span class="muted" style="font-size:11.5px">قبل يومين</span></div>
+            <div class="muted" style="font-size:12px;margin-top:3px">جامعة ذي قار</div>
+            <div style="font-size:12.5px;margin-top:4px">الخطوة 7 — تحليل الفجوات</div>
+          </div></a></div></div>
+        <div class="card mb-16"><div class="card__head"><h3>قرار الخطوة</h3><span class="tag" dir="ltr">iter: 2</span></div>
+          <div class="card__body">
+            <!-- ACCEPTED -->
+            <div style="padding:10px 0">
+              <button class="btn btn--primary" style="width:100%;justify-content:center;background:var(--green-600,#1f9d57);border-color:var(--green-600,#1f9d57)" data-noop><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> ACCEPTED — قبول الخطوة وفتح التالية</button>
+              <div class="muted" style="font-size:11.5px;margin-top:6px">تنتقل الخطوة 5 إلى ACCEPTED، وتُفتح الخطوة 6 تلقائياً.</div>
+            </div>
+            <div class="divider" style="margin:6px 0"></div>
+            <!-- CHANGE_REQUESTED -->
+            <div style="padding:10px 0">
+              <label style="font-size:12.5px;font-weight:600">CHANGE_REQUESTED — سبب طلب التغيير (يُرسَل للمؤسسة)</label>
+              <textarea class="input mt-8" placeholder="حدّد المعايير المطلوب تعديلها والإجراء المطلوب...">المعيار STD-5.4 (المرافق والمختبرات) غير مستوفٍ — يلزم رفع أدلة محدّثة لتجهيزات المختبرات.</textarea>
+              <button class="btn btn--danger mt-8" style="width:100%;justify-content:center" data-noop>↩ إعادة للتعديل — نفس الخطوة (iteration+1)</button>
+            </div>
+            <div class="divider" style="margin:6px 0"></div>
+            <!-- LOOPED_BACK -->
+            <div style="padding:10px 0;background:#fff7e6;border:1px dashed #c98a1a;border-radius:8px;padding:12px">
+              <label style="font-size:12.5px;font-weight:600;color:#7a5400"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12a9 9 0 0 1 15-6.7L21 8M21 3v5h-5M21 12a9 9 0 0 1-15 6.7L3 16M3 21v-5h5"/></svg> LOOP TO STEP M — إعادة لخطوة سابقة</label>
+              <div class="muted" style="font-size:11.5px;margin:4px 0 10px">يُستخدم عند اكتشاف أن مشكلة في الخطوة الحالية تُبطل عمل خطوة أسبق. تُصفَّر كل الخطوات من M إلى N إلى PENDING.</div>
+              <div class="form-row" style="margin:0">
+                <div class="field" style="margin:0"><label>الخطوة الهدف (M)</label>
+                  <select class="input">
+                    <option>— اختر —</option>
+                    <option>2 — التقييم الذاتي (SAR)</option>
+                    <option>3 — رفع الأدلة وربطها</option>
+                    <option selected>4 — المراجعة المكتبية</option>
+                  </select>
+                  <div class="hint">يجب أن تكون M &lt; الخطوة الحالية (5)</div></div>
+              </div>
+              <div class="field mt-8" style="margin:0"><label>سبب إعادة الالتفاف</label>
+                <textarea class="input" placeholder="اشرح المشكلة المنهجية التي أدّت لإعادة الخطوات...">عدم اتساق المعايير المُحدَّدة في الخطوة 4 مع الأدلة المرفوعة لاحقاً — يلزم إعادة المراجعة المكتبية على ضوء معايير v3 المُحدَّثة.</textarea></div>
+              <button class="btn mt-8" style="width:100%;justify-content:center;background:#c98a1a;border-color:#c98a1a;color:#fff" data-noop><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12a9 9 0 0 1 15-6.7L21 8M21 3v5h-5M21 12a9 9 0 0 1-15 6.7L3 16M3 21v-5h5"/></svg> إعادة الالتفاف إلى الخطوة 4 (تصفير 4→5)</button>
+            </div>
+          </div></div>
+        <div class="notice warn"><span>⏱</span><div>أمام المجلس <b>14 يوماً</b> لإصدار قرار الخطوة قبل تصعيد SLA الآلي.</div></div>
+      </div>
+    </div>
+    <script>
+      (function(){var p=new URLSearchParams(location.search);var a=p.get('app');
+      if(a){var h=document.getElementById('rvhdr'); if(h) h.textContent='مراجعة خطوة — '+a;}})();
+    </script>
+    </div>
+  </div>
+</div>
+<script src="../assets/app.js"></script>
+</body>
+</html>

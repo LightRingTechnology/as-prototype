@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>استثناءات الدورة — منصة الاعتماد الوطنية</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<div class="app">
+  <aside class="sidebar">
+    <div class="sidebar__brand">
+      <div class="sidebar__logo">و</div>
+      <div><b>منصة الاعتماد الوطنية</b><span>وزارة التعليم العالي والبحث العلمي</span></div>
+    </div>
+    <div class="sidebar__portal"><span>بوابة المجلس</span><span class="dot" style="background:#128f8f"></span></div>
+    <nav class="nav">
+      <div class="nav__label">القائمة الرئيسية</div>
+      <a href="dashboard.html" class=""><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/></svg><span>لوحة المعلومات</span></a>
+<div class="nav__label">بيانات المجلس</div>
+      <a href="settings.html" class=""><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-5 9 5"/><path d="M4 9v10M20 9v10M9 9v10M15 9v10M3 21h18"/></svg><span>ملف المجلس</span></a>
+      <a href="programs.html" class=""><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 5a2 2 0 0 1 2-2h12v18H6a2 2 0 0 1-2-2z"/><path d="M8 3v18"/></svg><span>البرامج والتخصصات</span></a>
+      <a href="members.html" class=""><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="8" r="3"/><path d="M3 20c0-3 3-5 6-5s6 2 6 5"/><path d="M16 6a3 3 0 0 1 0 6M21 20c0-2.2-1.5-3.8-3.5-4.5"/></svg><span>أعضاء المجلس</span></a>
+      <a href="circulars.html" class=""><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg><span>التعاميم</span></a>
+      <a href="publications.html" class=""><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l9 5-9 5-9-5z"/><path d="M3 13l9 5 9-5"/></svg><span>الإصدارات والمعايير</span></a>
+      <a href="cycles.html" class=""><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M3 9h18M8 2v4M16 2v4"/></svg><span>دورات الاعتماد</span></a>
+<div class="nav__label">الاعتماد</div>
+      <a href="applications.html" class=""><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="6" y="4" width="12" height="17" rx="2"/><path d="M9 4V3h6v1"/><path d="M9 10h6M9 14h6"/></svg><span>طلبات الاعتماد</span></a>
+      <a href="step-review.html" class=""><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg><span>مراجعة الخطوات</span></a>
+    </nav>
+    <div class="sidebar__foot">
+      <a href="../index.html"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 4L3 8l4 4"/><path d="M3 8h13a4 4 0 0 1 4 4"/><path d="M17 20l4-4-4-4"/><path d="M21 16H8a4 4 0 0 1-4-4"/></svg> تبديل البوابة</a>
+    </div>
+  </aside>
+  <div class="main">
+    <header class="topbar">
+      <button class="icon-btn hamburger" data-noop><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+      <div class="topbar__title">استثناءات الدورة<small>استثناءات قالب الخطوات لهذه الدورة</small></div>
+      <div class="topbar__spacer"></div>
+      <div class="search"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4-4"/></svg><input placeholder="بحث في المنصة..." data-noop></div>
+      <button class="icon-btn" data-noop><svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9a6 6 0 1 1 12 0c0 6 2 7 2 7H4s2-1 2-7z"/><path d="M10 21h4"/></svg><span class="badge-dot"></span></button>
+      <div class="avatar">
+        <div class="avatar__img">س.ع</div>
+        <div class="avatar__name">د. سالم العبيدي<span>رئيس مجلس اعتماد الهندسة</span></div>
+      </div>
+    </header>
+    <div class="content">
+      <div class="crumb">بوابة المجلس / <a href="cycles.html">الدورات</a> / استثناءات الخطوات</div>
+      
+    <div class="page-head"><div><h1 id="cyhdr">استثناءات الخطوات — دورة 2026–2027</h1>
+    <p>تسمح بتعديل بعض الخطوات لهذه الدورة <b>دون تغيير القالب الأصلي</b> للبرنامج. الحقول الفارغة ترجع تلقائياً لقيم القالب.</p></div>
+    <div class="row"><a href="cycles.html" class="btn btn--ghost">→ الدورات</a><button class="btn btn--primary" data-noop><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> حفظ الاستثناءات</button></div></div>
+
+    <div class="notice info mb-24"><span>ℹ</span><div>الاستثناءات تُخزَّن في <code>council.cycle_step_override</code> و<code>council.cycle_step_indicator_override</code>. عند إنشاء طلب جديد ضمن هذه الدورة يُدمج القالب + الاستثناءات لإنتاج خطوات الطلب.</div></div>
+
+    <div class="grid grid--3 mb-24">
+      <div class="card"><div class="card__body" style="text-align:center"><div class="stat__val" style="color:var(--teal-500)">3</div><div class="stat__label">خطوات لها استثناءات</div></div></div>
+      <div class="card"><div class="card__body" style="text-align:center"><div class="stat__val" style="color:#1f9d57">+1</div><div class="stat__label">معايير مضافة</div></div></div>
+      <div class="card"><div class="card__body" style="text-align:center"><div class="stat__val" style="color:#d64545">−1</div><div class="stat__label">معايير مستبعَدة</div></div></div>
+    </div>
+
+    <div class="grid" style="grid-template-columns:1.6fr 1fr;align-items:start;gap:18px">
+      <div>
+        <div class="card mb-16"><div class="card__head"><h3>الاستثناءات على القالب</h3>
+          <button class="btn btn--primary btn--sm" data-noop><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg> استثناء خطوة جديد</button></div>
+          <div class="card__body"><div class="card" style="margin-bottom:10px;">
+          <div class="card__body row" style="gap:14px;align-items:flex-start">
+            <div style="width:30px;height:30px;border-radius:50%;background:#dbe7ff;color:#2563c9;display:flex;align-items:center;justify-content:center;font-weight:700;flex:0 0 auto">2</div>
+            <div style="flex:1">
+              <div class="row" style="gap:8px;flex-wrap:wrap;align-items:center"><b style="font-size:14px">التقييم الذاتي (SAR)</b></div>
+              <div class="row" style="gap:8px;flex-wrap:wrap;margin-top:6px"><span class="muted" style="font-size:12px">لجنة (نصاب مطلوب)</span><span class="badge red badge--plain">−1 REMOVE</span></div>
+              <div class="muted" style="font-size:11.5px;margin-top:5px">name unchanged · reviewer unchanged · +1 معيار مضاف</div>
+            </div>
+            <div class="row" style="gap:6px;flex:0 0 auto">
+              <button class="btn btn--ghost btn--sm" data-noop><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 20h4l11-11a2.5 2.5 0 0 0-3.5-3.5L4 16z"/><path d="M13 7l4 4"/></svg> تعديل</button>
+              <button class="btn btn--danger btn--sm" data-noop>إزالة الاستثناء</button>
+            </div>
+          </div></div><div class="card" style="margin-bottom:10px;border-color:var(--teal-500)">
+          <div class="card__body row" style="gap:14px;align-items:flex-start">
+            <div style="width:30px;height:30px;border-radius:50%;background:#dbe7ff;color:#2563c9;display:flex;align-items:center;justify-content:center;font-weight:700;flex:0 0 auto">4</div>
+            <div style="flex:1">
+              <div class="row" style="gap:8px;flex-wrap:wrap;align-items:center"><b style="font-size:14px">المراجعة المكتبية المُحكَّمة</b></div>
+              <div class="row" style="gap:8px;flex-wrap:wrap;margin-top:6px"><span class="muted" style="font-size:12px">مُقيّم المجلس</span><span class="badge green badge--plain">+1 ADD</span></div>
+              <div class="muted" style="font-size:11.5px;margin-top:5px">اسم مُستثنى · إزالة معيار غير مطبَّق على هذه الدورة</div>
+            </div>
+            <div class="row" style="gap:6px;flex:0 0 auto">
+              <button class="btn btn--ghost btn--sm" data-noop><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 20h4l11-11a2.5 2.5 0 0 0-3.5-3.5L4 16z"/><path d="M13 7l4 4"/></svg> تعديل</button>
+              <button class="btn btn--danger btn--sm" data-noop>إزالة الاستثناء</button>
+            </div>
+          </div></div><div class="card" style="margin-bottom:10px;border-color:var(--teal-500)">
+          <div class="card__body row" style="gap:14px;align-items:flex-start">
+            <div style="width:30px;height:30px;border-radius:50%;background:#dbe7ff;color:#2563c9;display:flex;align-items:center;justify-content:center;font-weight:700;flex:0 0 auto">5</div>
+            <div style="flex:1">
+              <div class="row" style="gap:8px;flex-wrap:wrap;align-items:center"><b style="font-size:14px">الزيارة الميدانية المكثّفة</b></div>
+              <div class="row" style="gap:8px;flex-wrap:wrap;margin-top:6px"><span class="muted" style="text-decoration:line-through;font-size:11.5px">لجنة خبراء</span> <span style="font-size:12.5px">→</span> <b style="font-size:12.5px">لجنة (نصاب مطلوب)</b></div>
+              <div class="muted" style="font-size:11.5px;margin-top:5px">مُغيَّر نوع المراجع: COMMITTEE → EXPERT_PANEL</div>
+            </div>
+            <div class="row" style="gap:6px;flex:0 0 auto">
+              <button class="btn btn--ghost btn--sm" data-noop><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 20h4l11-11a2.5 2.5 0 0 0-3.5-3.5L4 16z"/><path d="M13 7l4 4"/></svg> تعديل</button>
+              <button class="btn btn--danger btn--sm" data-noop>إزالة الاستثناء</button>
+            </div>
+          </div></div></div></div>
+
+        <div class="notice warn mb-16"><span>⚠</span><div>الاستثناءات لا تُغيّر القالب الأصل في <code>council.program_step_template</code>. الدورات الأخرى تبقى على القالب الافتراضي.</div></div>
+      </div>
+      <div>
+        <div class="card mb-16"><div class="card__head"><h3>إضافة استثناء</h3></div>
+          <div class="card__body">
+            <div class="field"><label>الخطوة (step_template) <span class="req">*</span></label>
+              <select class="input"><option>— اختر خطوة من القالب —</option><option>1 · تهيئة وفتح الطلب</option><option>2 · التقييم الذاتي</option><option>3 · رفع الأدلة</option><option>4 · المراجعة المكتبية</option><option>5 · الزيارة الميدانية</option><option>6 · التقييم النهائي</option></select></div>
+            <div class="field"><label>الاسم البديل (name) — اتركه فارغاً للإبقاء على اسم القالب</label><input class="input" placeholder="اسم خاص بهذه الدورة فقط (اختياري)"></div>
+            <div class="field"><label>نوع المراجع البديل (reviewer_type)</label>
+              <select class="input"><option>— الإبقاء على نوع القالب —</option><option>COUNCIL_REVIEWER — مُقيّم المجلس</option><option>COMMITTEE — لجنة (نصاب مطلوب)</option><option>EXPERT_PANEL — لجنة خبراء</option></select></div>
+            <div class="divider"></div>
+            <label style="font-size:12.5px;font-weight:600">إضافة / إزالة معايير (cycle_step_indicator_override)</label>
+            <div class="form-row mt-8">
+              <div class="field"><label>إجراء</label><select class="input"><option>ADD — إضافة</option><option>REMOVE — إزالة</option></select></div>
+              <div class="field"><label>المعيار الجزئي</label><select class="input"><option>— اختر —</option><option>1.1.1 الأهداف معرّفة بوضوح</option><option>1.1.2 الأهداف منشورة</option><option>1.2.1 المراجعة الدورية</option></select></div>
+            </div>
+            <div class="row" style="gap:8px;margin-top:14px"><button class="btn btn--ghost" data-noop>إلغاء</button><button class="btn btn--primary" data-noop>حفظ الاستثناء</button></div>
+          </div></div>
+
+        <div class="card"><div class="card__head"><h3>قواعد الحوكمة</h3></div>
+          <div class="card__body">
+            <div class="muted" style="font-size:12.5px;line-height:1.7">• القيم الفارغة (NULL) ترجع لقيم القالب الأصل.<br/>• الإجراءات: <b>ADD</b> لإضافة معيار، <b>REMOVE</b> لاستبعاد معيار.<br/>• تعديل القالب لا يؤثّر على الطلبات الجارية — كل طلب يحتفظ بنسخته المُلتقَطة عند إنشائه.</div>
+          </div></div>
+      </div>
+    </div>
+    <script>(function(){var c=new URLSearchParams(location.search).get('cycle');
+      if(c){var h=document.getElementById('cyhdr'); if(h) h.textContent='استثناءات الخطوات — دورة '+c;}})();</script>
+    </div>
+  </div>
+</div>
+<script src="../assets/app.js"></script>
+</body>
+</html>

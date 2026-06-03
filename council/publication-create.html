@@ -28,6 +28,7 @@
       <a href="cycles.html" class=""><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M3 9h18M8 2v4M16 2v4"/></svg><span>دورات الاعتماد</span></a>
 <div class="nav__label">الاعتماد</div>
       <a href="applications.html" class=""><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="6" y="4" width="12" height="17" rx="2"/><path d="M9 4V3h6v1"/><path d="M9 10h6M9 14h6"/></svg><span>طلبات الاعتماد</span></a>
+      <a href="step-review.html" class=""><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg><span>مراجعة الخطوات</span></a>
     </nav>
     <div class="sidebar__foot">
       <a href="../index.html"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 4L3 8l4 4"/><path d="M3 8h13a4 4 0 0 1 4 4"/><path d="M17 20l4-4-4-4"/><path d="M21 16H8a4 4 0 0 1-4-4"/></svg> تبديل البوابة</a>
@@ -49,9 +50,9 @@
       <div class="crumb">بوابة المجلس / <a href="publications.html">الإصدارات والمعايير</a> / إصدار جديد</div>
       
     <div class="page-head"><div><h1>إصدار جديد للمعايير</h1>
-    <p>إضافة إصدار جديد وفق مخطط council.council_publication — لا يُكتب فوق أي إصدار سابق.</p></div>
+    <p>إنشاء حاوية إصدار جديدة (council.council_publication) ثم الانتقال لبنّاء شجرة المعايير: <b>معيار ← مجموعة ← معيار جزئي ← مؤشر</b>.</p></div>
     <a href="publications.html" class="btn btn--ghost">→ رجوع للإصدارات</a></div>
-    <div class="notice warn mb-24"><span>⚠</span><div><b>قاعدة حوكمة صارمة:</b> لا يجوز إطلاقاً الكتابة فوق إصدار موجود — يُنشأ سجلّ إصدار جديد دائماً. تبقى الإصدارات السابقة محفوظة لأنّ الطلبات القديمة تشير إليها.</div></div>
+    <div class="notice warn mb-24"><span>⚠</span><div><b>قاعدة حوكمة صارمة:</b> الإصدار يُنشأ ابتداءً كـ <code>is_published = false</code> (مسودة). تبقى المسودة قابلة للتعديل حتى يضغط رئيس المجلس "نشر". بعد النشر يصبح الإصدار مُجمَّداً ولا يُكتب فوقه.</div></div>
     <div class="grid" style="grid-template-columns:2fr 1fr;align-items:start;">
       <div class="card"><div class="card__head"><h3>بيانات الإصدار</h3></div>
         <div class="card__body">
@@ -65,13 +66,14 @@
               <div class="hint">يُحسب آلياً — الإصدار الفعّال الحالي v3</div></div>
           </div>
           <div class="form-row">
-            <div class="field"><label>تاريخ النشر (publication_date) <span class="req">*</span></label><input class="input" type="date" value="2026-06-01"></div>
-            <div class="field"><label>الحالة</label>
-              <select class="input"><option>فعّال (is_active = true)</option><option>مسودة</option></select></div>
+            <div class="field"><label>تاريخ النشر المتوقَّع (publication_date)</label><input class="input" type="date" value="2026-06-01"><div class="hint">يُحدَّد لاحقاً عند النشر</div></div>
+            <div class="field"><label>الحالة عند الإنشاء</label>
+              <select class="input" disabled><option>مسودة (is_published = false)</option></select>
+              <div class="hint">تبدأ الإصدارات دائماً كمسودات قابلة للتعديل</div></div>
           </div>
           <div class="field"><label>الوصف (description)</label><textarea class="input" placeholder="ملخص التغييرات في هذا الإصدار مقارنةً بالسابق..."></textarea></div>
-          <div class="field"><label>ملف المعايير (file_id) <span class="req">*</span></label>
-            <div class="dropzone">اسحب ملف PDF هنا أو <b>تصفّح للرفع</b><div class="muted" style="font-size:12px;margin-top:6px">PDF — يُخزَّن في MinIO/S3</div></div></div>
+          <div class="field"><label>ملف PDF مرفق (file_id) — اختياري</label>
+            <div class="dropzone">اسحب نسخة PDF كاملة للمعايير (إن وجدت) أو <b>تصفّح للرفع</b><div class="muted" style="font-size:12px;margin-top:6px">PDF — يُخزَّن في MinIO/S3. الشجرة الرسمية تُؤلَّف داخل المنصة في الخطوة التالية.</div></div></div>
         </div></div>
       <div>
         <div class="card mb-16"><div class="card__head"><h3>سجلّ السلسلة</h3></div>
@@ -81,10 +83,10 @@
             <div class="between" style="padding:9px 0;border-top:1px solid var(--line-2)"><span class="ver"><span class="pill old">v1</span> معايير الهندسة</span><span class="badge grey badge--plain">مؤرشف</span></div>
             <div class="between" style="padding:9px 0;border-top:1px dashed var(--line)"><span class="ver"><span class="pill">v4</span> (جديد)</span><span class="badge teal badge--plain">قيد الإنشاء</span></div>
           </div></div>
-        <div class="notice info mb-16"><span>ℹ</span><div>عند التفعيل يصبح v4 الإصدار المتاح للدورات الجديدة؛ الطلبات الجارية تبقى مرتبطة بالإصدار الذي قُدّمت وفقه.</div></div>
+        <div class="notice info mb-16"><span>ℹ</span><div>بعد الإنشاء يفتح <b>بنّاء المعايير</b> (Standard → Group → Criterion → Indicator). يصبح الإصدار قابلاً للربط بدورة اعتماد فقط بعد ضغط "نشر".</div></div>
         <div class="card"><div class="card__body">
-          <button class="btn btn--primary" style="width:100%;justify-content:center" data-noop><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> نشر الإصدار</button>
-          <a href="publications.html" class="btn btn--ghost mt-8" style="width:100%;justify-content:center">حفظ كمسودة</a>
+          <a href="publication-standards.html?pub=v4" class="btn btn--primary" style="width:100%;justify-content:center"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> إنشاء وبدء تأليف المعايير ←</a>
+          <a href="publications.html" class="btn btn--ghost mt-8" style="width:100%;justify-content:center">إلغاء</a>
         </div></div>
       </div>
     </div>

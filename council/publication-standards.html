@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>تأليف المعايير — منصة الاعتماد الوطنية</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<div class="app">
+  <aside class="sidebar">
+    <div class="sidebar__brand">
+      <div class="sidebar__logo">و</div>
+      <div><b>منصة الاعتماد الوطنية</b><span>وزارة التعليم العالي والبحث العلمي</span></div>
+    </div>
+    <div class="sidebar__portal"><span>بوابة المجلس</span><span class="dot" style="background:#128f8f"></span></div>
+    <nav class="nav">
+      <div class="nav__label">القائمة الرئيسية</div>
+      <a href="dashboard.html" class=""><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/></svg><span>لوحة المعلومات</span></a>
+<div class="nav__label">بيانات المجلس</div>
+      <a href="settings.html" class=""><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-5 9 5"/><path d="M4 9v10M20 9v10M9 9v10M15 9v10M3 21h18"/></svg><span>ملف المجلس</span></a>
+      <a href="programs.html" class=""><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 5a2 2 0 0 1 2-2h12v18H6a2 2 0 0 1-2-2z"/><path d="M8 3v18"/></svg><span>البرامج والتخصصات</span></a>
+      <a href="members.html" class=""><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="8" r="3"/><path d="M3 20c0-3 3-5 6-5s6 2 6 5"/><path d="M16 6a3 3 0 0 1 0 6M21 20c0-2.2-1.5-3.8-3.5-4.5"/></svg><span>أعضاء المجلس</span></a>
+      <a href="circulars.html" class=""><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg><span>التعاميم</span></a>
+      <a href="publications.html" class=""><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l9 5-9 5-9-5z"/><path d="M3 13l9 5 9-5"/></svg><span>الإصدارات والمعايير</span></a>
+      <a href="cycles.html" class=""><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M3 9h18M8 2v4M16 2v4"/></svg><span>دورات الاعتماد</span></a>
+<div class="nav__label">الاعتماد</div>
+      <a href="applications.html" class=""><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="6" y="4" width="12" height="17" rx="2"/><path d="M9 4V3h6v1"/><path d="M9 10h6M9 14h6"/></svg><span>طلبات الاعتماد</span></a>
+      <a href="step-review.html" class=""><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg><span>مراجعة الخطوات</span></a>
+    </nav>
+    <div class="sidebar__foot">
+      <a href="../index.html"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 4L3 8l4 4"/><path d="M3 8h13a4 4 0 0 1 4 4"/><path d="M17 20l4-4-4-4"/><path d="M21 16H8a4 4 0 0 1-4-4"/></svg> تبديل البوابة</a>
+    </div>
+  </aside>
+  <div class="main">
+    <header class="topbar">
+      <button class="icon-btn hamburger" data-noop><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+      <div class="topbar__title">تأليف المعايير<small>بنّاء شجرة المعايير</small></div>
+      <div class="topbar__spacer"></div>
+      <div class="search"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4-4"/></svg><input placeholder="بحث في المنصة..." data-noop></div>
+      <button class="icon-btn" data-noop><svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9a6 6 0 1 1 12 0c0 6 2 7 2 7H4s2-1 2-7z"/><path d="M10 21h4"/></svg><span class="badge-dot"></span></button>
+      <div class="avatar">
+        <div class="avatar__img">س.ع</div>
+        <div class="avatar__name">د. سالم العبيدي<span>رئيس مجلس اعتماد الهندسة</span></div>
+      </div>
+    </header>
+    <div class="content">
+      <div class="crumb">بوابة المجلس / <a href="publications.html">الإصدارات</a> / تأليف المعايير</div>
+      
+    <div class="page-head"><div><h1 id="pubhdr">تأليف المعايير — معايير الهندسة v4</h1>
+    <p>بنّاء شجرة المعايير داخل الإصدار: <b>معيار ← مجموعة ← معيار جزئي ← مؤشر</b>. الحقول الفعلية يُعرّفها بنّاء النماذج عند مستوى المعيار الجزئي/المؤشر.</p></div>
+    <div class="row"><span class="badge amber">مسودة</span><a href="publications.html" class="btn btn--ghost">→ الإصدارات</a></div></div>
+
+    <div class="notice info mb-24"><span>🔒</span><div>أنت تحرّر <b>مسودة</b> (is_published=false). يبقى الإصدار قابلاً للتعديل حتى ضغط "نشر". بعد النشر يصبح مُجمَّداً ولا يُعدَّل أبداً — أي تحديث لاحق ينشئ إصداراً جديداً.</div></div>
+
+    <div class="grid" style="grid-template-columns:1.5fr 1fr;align-items:start;gap:18px">
+      <div>
+        <div class="card mb-16"><div class="card__head"><h3>الشجرة المعيارية</h3>
+          <div class="row"><span class="muted" style="font-size:12.5px">2 معيار · 4 مجموعة · 5 معايير جزئية</span></div></div>
+          <div class="card__body" style="padding:0"><div class="between" style="padding:11px 14px;border-bottom:1px solid var(--line-2);padding-inline-start:14px;align-items:center;gap:10px">
+          <div class="row" style="gap:9px;flex:1;align-items:center">
+            <span style="opacity:.6;flex:0 0 auto"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l9 5-9 5-9-5z"/><path d="M3 13l9 5 9-5"/></svg></span>
+            <span class="tag" style="font-size:11px">STD-1</span>
+            <span style="font-size:15px;font-weight:700">أهداف ومخرجات البرنامج</span><span class="muted" dir="ltr" style="font-size:11.5px;margin-inline-start:6px">Program Educational Objectives</span>
+          </div>
+          <div class="row" style="gap:8px;align-items:center;flex:0 0 auto"><span class="tag">وزن 1.5</span><span class="muted" style="font-size:11px">معيار</span><button class="btn btn--ghost btn--sm" data-noop>تعديل</button></div>
+        </div><div class="between" style="padding:11px 14px;border-bottom:1px solid var(--line-2);padding-inline-start:36px;align-items:center;gap:10px">
+          <div class="row" style="gap:9px;flex:1;align-items:center">
+            <span style="opacity:.6;flex:0 0 auto"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 5a2 2 0 0 1 2-2h12v18H6a2 2 0 0 1-2-2z"/><path d="M8 3v18"/></svg></span>
+            <span class="tag" style="font-size:11px">1.1</span>
+            <span style="font-size:14px;font-weight:600">التعريف والنشر</span><span class="muted" dir="ltr" style="font-size:11.5px;margin-inline-start:6px">Definition & Publication</span>
+          </div>
+          <div class="row" style="gap:8px;align-items:center;flex:0 0 auto"><span class="tag">وزن 1.0</span><span class="muted" style="font-size:11px">مجموعة</span><button class="btn btn--ghost btn--sm" data-noop>تعديل</button></div>
+        </div><div class="between" style="padding:11px 14px;border-bottom:1px solid var(--line-2);padding-inline-start:58px;align-items:center;gap:10px;background:var(--teal-50,#eafafa);border-inline-start:3px solid var(--teal-500)">
+      <div class="row" style="gap:9px;flex:1;align-items:center">
+        <span style="opacity:.6"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="6" y="4" width="12" height="17" rx="2"/><path d="M9 4V3h6v1"/><path d="M9 10h6M9 14h6"/></svg></span><span class="tag" style="font-size:11px">1.1.1</span>
+        <span style="font-size:13.5px;font-weight:500">الأهداف معرّفة بوضوح</span><span class="muted" dir="ltr" style="font-size:11.5px;margin-inline-start:6px">Objectives clearly defined</span></div>
+      <div class="row" style="gap:8px;align-items:center"><span class="badge teal badge--plain">TEXT_AND_FILE</span><span class="tag">وزن 1.0</span><span class="badge green badge--plain">إلزامي</span><span class="muted" style="font-size:11px">معيار جزئي</span><span class="badge teal">مُحدَّد</span></div>
+    </div><div class="between" style="padding:11px 14px;border-bottom:1px solid var(--line-2);padding-inline-start:58px;align-items:center;gap:10px">
+          <div class="row" style="gap:9px;flex:1;align-items:center">
+            <span style="opacity:.6;flex:0 0 auto"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="6" y="4" width="12" height="17" rx="2"/><path d="M9 4V3h6v1"/><path d="M9 10h6M9 14h6"/></svg></span>
+            <span class="tag" style="font-size:11px">1.1.2</span>
+            <span style="font-size:13.5px;font-weight:500">الأهداف منشورة ومتاحة</span><span class="muted" dir="ltr" style="font-size:11.5px;margin-inline-start:6px">Objectives publicly accessible</span>
+          </div>
+          <div class="row" style="gap:8px;align-items:center;flex:0 0 auto"><span class="badge teal badge--plain">YES_NO</span><span class="tag">وزن 0.5</span><span class="badge green badge--plain">إلزامي</span><span class="muted" style="font-size:11px">معيار جزئي</span><button class="btn btn--ghost btn--sm" data-noop>تعديل</button></div>
+        </div><div style="padding:8px 14px 8px 58px;border-bottom:1px solid var(--line-2)"><button class="btn btn--ghost btn--sm" data-noop><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg><span>إضافة معيار جزئي</span></button></div><div class="between" style="padding:11px 14px;border-bottom:1px solid var(--line-2);padding-inline-start:36px;align-items:center;gap:10px">
+          <div class="row" style="gap:9px;flex:1;align-items:center">
+            <span style="opacity:.6;flex:0 0 auto"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 5a2 2 0 0 1 2-2h12v18H6a2 2 0 0 1-2-2z"/><path d="M8 3v18"/></svg></span>
+            <span class="tag" style="font-size:11px">1.2</span>
+            <span style="font-size:14px;font-weight:600">المراجعة والتحسين</span><span class="muted" dir="ltr" style="font-size:11.5px;margin-inline-start:6px">Review & Improvement</span>
+          </div>
+          <div class="row" style="gap:8px;align-items:center;flex:0 0 auto"><span class="tag">وزن 1.0</span><span class="muted" style="font-size:11px">مجموعة</span><button class="btn btn--ghost btn--sm" data-noop>تعديل</button></div>
+        </div><div class="between" style="padding:11px 14px;border-bottom:1px solid var(--line-2);padding-inline-start:58px;align-items:center;gap:10px">
+          <div class="row" style="gap:9px;flex:1;align-items:center">
+            <span style="opacity:.6;flex:0 0 auto"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="6" y="4" width="12" height="17" rx="2"/><path d="M9 4V3h6v1"/><path d="M9 10h6M9 14h6"/></svg></span>
+            <span class="tag" style="font-size:11px">1.2.1</span>
+            <span style="font-size:13.5px;font-weight:500">تُراجَع الأهداف دورياً</span><span class="muted" dir="ltr" style="font-size:11.5px;margin-inline-start:6px">Reviewed regularly</span>
+          </div>
+          <div class="row" style="gap:8px;align-items:center;flex:0 0 auto"><span class="badge teal badge--plain">TEXT_AND_FILE</span><span class="tag">وزن 1.0</span><span class="badge green badge--plain">إلزامي</span><span class="muted" style="font-size:11px">معيار جزئي</span><button class="btn btn--ghost btn--sm" data-noop>تعديل</button></div>
+        </div><div class="between" style="padding:11px 14px;border-bottom:1px solid var(--line-2);padding-inline-start:58px;align-items:center;gap:10px">
+          <div class="row" style="gap:9px;flex:1;align-items:center">
+            <span style="opacity:.6;flex:0 0 auto"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="6" y="4" width="12" height="17" rx="2"/><path d="M9 4V3h6v1"/><path d="M9 10h6M9 14h6"/></svg></span>
+            <span class="tag" style="font-size:11px">1.2.2</span>
+            <span style="font-size:13.5px;font-weight:500">نتائج المراجعة مُوثّقة</span><span class="muted" dir="ltr" style="font-size:11.5px;margin-inline-start:6px">Review outcomes documented</span>
+          </div>
+          <div class="row" style="gap:8px;align-items:center;flex:0 0 auto"><span class="badge teal badge--plain">FILE</span><span class="tag">وزن 1.0</span><span class="badge grey badge--plain">اختياري</span><span class="muted" style="font-size:11px">معيار جزئي</span><button class="btn btn--ghost btn--sm" data-noop>تعديل</button></div>
+        </div><div style="padding:8px 14px 8px 58px;border-bottom:1px solid var(--line-2)"><button class="btn btn--ghost btn--sm" data-noop><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg><span>إضافة معيار جزئي</span></button></div><div style="padding:10px 14px 10px 36px;border-bottom:1px solid var(--line-2)"><button class="btn btn--ghost btn--sm" data-noop><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg><span>إضافة مجموعة</span></button></div><div class="between" style="padding:13px 14px;border-bottom:1px solid var(--line-2);align-items:center;gap:10px">
+      <div class="row" style="gap:9px;flex:1;align-items:center">
+        <span style="opacity:.6"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l9 5-9 5-9-5z"/><path d="M3 13l9 5 9-5"/></svg></span><span class="tag" style="font-size:11px">STD-2</span>
+        <span style="font-size:15px;font-weight:700">تصميم المنهج</span><span class="muted" dir="ltr" style="font-size:11.5px;margin-inline-start:6px">Curriculum Design</span></div>
+      <div class="row" style="gap:8px;align-items:center"><span class="tag">2 مجموعة · 3 معايير</span><span class="tag">وزن 2.0</span><button class="btn btn--ghost btn--sm" data-noop>▾ توسيع</button><button class="btn btn--ghost btn--sm" data-noop>تعديل</button></div>
+    </div><div style="padding:12px 14px"><button class="btn btn--ghost btn--sm" data-noop><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg><span>إضافة معيار (Standard)</span></button></div></div></div>
+      </div>
+      <div>
+        <div class="card mb-16" style="border-color:var(--teal-500)"><div class="card__head"><h3>بنّاء النموذج — معيار جزئي 1.1.1</h3><span class="badge teal">مُحدَّد</span></div>
+          <div class="card__body">
+            <div class="form-row">
+              <div class="field"><label>الرمز (code) <span class="req">*</span></label><input class="input" dir="ltr" value="1.1.1"></div>
+              <div class="field"><label>الوزن (weight)</label><input class="input" type="number" step="0.1" value="1.0" dir="ltr"></div>
+            </div>
+            <div class="field"><label>العنوان — عربي <span class="req">*</span></label><input class="input" value="الأهداف معرّفة بوضوح"></div>
+            <div class="field"><label>العنوان — إنجليزي</label><input class="input" dir="ltr" value="Objectives clearly defined"></div>
+            <div class="field"><label>الوصف (description)</label><textarea class="input">أن تكون أهداف البرنامج التعليمية مكتوبة بصياغة واضحة وقابلة للقياس.</textarea></div>
+            <div class="field"><label>إرشاد الدليل (evidence_hint)</label><textarea class="input">يُرفَق ملف الأهداف الرسمية + سياسة المراجعة الدورية.</textarea></div>
+            <div class="divider"></div>
+            <div class="form-row">
+              <div class="field"><label>نوع الاستجابة (response_type) <span class="req">*</span></label>
+                <select class="input"><option >TEXT — نص سردي</option><option >FILE — ملف مرفق</option><option >YES_NO — نعم / لا</option><option >SCORE_1_5 — تقييم 1–5</option><option >MULTIPLE_CHOICE — اختيار من متعدد</option><option selected>TEXT_AND_FILE — نص + ملف</option></select>
+                <div class="hint">يحدّد الحقول التي تراها المؤسسة عند ملء الاستجابة.</div></div>
+              <div class="field"><label>الإلزامية</label>
+                <select class="input"><option selected>إلزامي (is_required = true)</option><option>اختياري</option></select></div>
+            </div>
+            <div class="field"><label>الخيارات (للنوع MULTIPLE_CHOICE)</label>
+              <input class="input" placeholder="مفعّل، جزئي، غير مفعّل — مفصولة بفواصل" disabled>
+              <div class="hint">يُفعَّل فقط عند اختيار MULTIPLE_CHOICE.</div></div>
+            <div class="row" style="gap:8px;margin-top:14px"><button class="btn btn--ghost" data-noop>إلغاء</button><button class="btn btn--primary" data-noop><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> حفظ المعيار</button></div>
+          </div></div>
+
+        <div class="card mb-16"><div class="card__head"><h3>أنواع الاستجابة المتاحة</h3></div>
+          <div class="card__body"><div class="between" style="padding:7px 0;border-bottom:1px solid var(--line-2)"><span class="row"><span class="tag" dir="ltr">TEXT</span><span style="font-size:12.5px">نص سردي</span></span><span class="muted" style="font-size:11.5px" dir="ltr">Textarea narrative</span></div><div class="between" style="padding:7px 0;border-bottom:1px solid var(--line-2)"><span class="row"><span class="tag" dir="ltr">FILE</span><span style="font-size:12.5px">ملف مرفق</span></span><span class="muted" style="font-size:11.5px" dir="ltr">File upload</span></div><div class="between" style="padding:7px 0;border-bottom:1px solid var(--line-2)"><span class="row"><span class="tag" dir="ltr">YES_NO</span><span style="font-size:12.5px">نعم / لا</span></span><span class="muted" style="font-size:11.5px" dir="ltr">Yes / No toggle</span></div><div class="between" style="padding:7px 0;border-bottom:1px solid var(--line-2)"><span class="row"><span class="tag" dir="ltr">SCORE_1_5</span><span style="font-size:12.5px">تقييم 1–5</span></span><span class="muted" style="font-size:11.5px" dir="ltr">1–5 scale</span></div><div class="between" style="padding:7px 0;border-bottom:1px solid var(--line-2)"><span class="row"><span class="tag" dir="ltr">MULTIPLE_CHOICE</span><span style="font-size:12.5px">اختيار من متعدد</span></span><span class="muted" style="font-size:11.5px" dir="ltr">Radio choice</span></div><div class="between" style="padding:7px 0;border-bottom:1px solid var(--line-2)"><span class="row"><span class="tag" dir="ltr">TEXT_AND_FILE</span><span style="font-size:12.5px">نص + ملف</span></span><span class="muted" style="font-size:11.5px" dir="ltr">Narrative + evidence (default)</span></div></div></div>
+
+        <div class="card"><div class="card__body">
+          <button class="btn btn--primary" style="width:100%;justify-content:center;background:var(--green-600,#1f9d57);border-color:var(--green-600,#1f9d57)" data-noop><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> نشر الإصدار (is_published = true)</button>
+          <button class="btn btn--ghost mt-8" style="width:100%;justify-content:center" data-noop>حفظ المسودة</button>
+        </div></div>
+      </div>
+    </div>
+    <script>(function(){var p=new URLSearchParams(location.search).get('pub');
+      if(p){var h=document.getElementById('pubhdr'); if(h) h.textContent='تأليف المعايير — معايير الهندسة '+p;}})();</script>
+    </div>
+  </div>
+</div>
+<script src="../assets/app.js"></script>
+</body>
+</html>

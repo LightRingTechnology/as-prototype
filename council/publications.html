@@ -28,6 +28,7 @@
       <a href="cycles.html" class=""><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M3 9h18M8 2v4M16 2v4"/></svg><span>دورات الاعتماد</span></a>
 <div class="nav__label">الاعتماد</div>
       <a href="applications.html" class=""><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="6" y="4" width="12" height="17" rx="2"/><path d="M9 4V3h6v1"/><path d="M9 10h6M9 14h6"/></svg><span>طلبات الاعتماد</span></a>
+      <a href="step-review.html" class=""><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg><span>مراجعة الخطوات</span></a>
     </nav>
     <div class="sidebar__foot">
       <a href="../index.html"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 4L3 8l4 4"/><path d="M3 8h13a4 4 0 0 1 4 4"/><path d="M17 20l4-4-4-4"/><path d="M21 16H8a4 4 0 0 1-4-4"/></svg> تبديل البوابة</a>
@@ -36,7 +37,7 @@
   <div class="main">
     <header class="topbar">
       <button class="icon-btn hamburger" data-noop><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
-      <div class="topbar__title">الإصدارات والمعايير<small>اصدارات ومعايير المجلس</small></div>
+      <div class="topbar__title">الإصدارات والمعايير<small>حاوية تأليف المعايير</small></div>
       <div class="topbar__spacer"></div>
       <div class="search"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4-4"/></svg><input placeholder="بحث في المنصة..." data-noop></div>
       <button class="icon-btn" data-noop><svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9a6 6 0 1 1 12 0c0 6 2 7 2 7H4s2-1 2-7z"/><path d="M10 21h4"/></svg><span class="badge-dot"></span></button>
@@ -48,16 +49,30 @@
     <div class="content">
       <div class="crumb">بوابة المجلس / الإصدارات والمعايير</div>
       
-    <div class="page-head"><div><h1>الإصدارات والمعايير</h1><p>اصدارات ومعايير المجلس — تدعم الإصدارات المتعددة (Versioning).</p></div>
+    <div class="page-head"><div><h1>الإصدارات والمعايير</h1><p>الإصدار هو <b>الحاوية المعيارية المُؤرَّخة</b> التي يؤلّف فيها رئيس المجلس شجرة المعايير عبر بنّاء النماذج. كل دورة اعتماد تربط بإصدار واحد، ولا يُستبدل الإصدار أبداً.</p></div>
     <a href="publication-create.html" class="btn btn--primary"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg> إصدار جديد</a></div>
-    <div class="notice warn mb-24"><span>⚠</span><div><b>قاعدة حوكمة صارمة:</b> لا يجوز إطلاقاً الكتابة فوق إصدار موجود — يُنشأ سجل إصدار جديد دائماً. يجب أن يشير كل طلب إلى الإصدار الفعّال وقت تقديمه.</div></div>
-    <div class="card"><div class="card__head"><h3>سجلّ إصدارات المعايير</h3></div>
+    <div class="notice warn mb-24"><span>⚠</span><div><b>قاعدة حوكمة صارمة (council.council_publication):</b> لا يُكتب فوق إصدار منشور أبداً. التحديث = إصدار جديد (مسودة) → تأليف → نشر. الطلبات السابقة تبقى مُلتزمة بإصدارها الأصلي.</div></div>
+    <div class="card"><div class="card__head"><h3>سجلّ الإصدارات</h3>
+      <div class="chip-tabs"><a href="#" class="active" data-noop>الكل (4)</a><a href="#" data-noop>مسودات (1)</a><a href="#" data-noop>منشورة (3)</a></div></div>
     <div class="table-wrap"><table class="tbl">
-      <thead><tr><th>العنوان</th><th>الإصدار</th><th>تاريخ النشر</th><th>ملاحظة</th><th>الحالة</th><th></th></tr></thead>
-      <tbody><tr><td class="strong">معايير الهندسة</td><td><span class="ver"><span class="pill">v3</span></span></td><td class="muted">2026-01-15</td>
-        <td>فعّال — يحكم دورة 2026-2027</td><td><span class="badge green">فعّال</span></td><td><a href="#" data-noop class="btn btn--ghost btn--sm">تنزيل</a></td></tr><tr><td class="strong">معايير الهندسة</td><td><span class="ver"><span class="pill old">v2</span></span></td><td class="muted">2023-09-01</td>
-        <td>مؤرشف</td><td><span class="badge grey">مؤرشف</span></td><td><a href="#" data-noop class="btn btn--ghost btn--sm">تنزيل</a></td></tr><tr><td class="strong">معايير الهندسة</td><td><span class="ver"><span class="pill old">v1</span></span></td><td class="muted">2020-06-10</td>
-        <td>مؤرشف</td><td><span class="badge grey">مؤرشف</span></td><td><a href="#" data-noop class="btn btn--ghost btn--sm">تنزيل</a></td></tr></tbody></table></div></div>
+      <thead><tr><th>العنوان</th><th>الإصدار</th><th>تاريخ النشر</th><th>ملاحظة</th><th>الشجرة (S/G/C)</th><th>الحالة</th><th></th></tr></thead>
+      <tbody><tr style="cursor:pointer" onclick="location.href='publication-standards.html?pub=v4'">
+        <td class="strong">معايير الهندسة</td><td><span class="ver"><span class="pill">v4</span></span></td>
+        <td class="muted">—</td><td>قيد التأليف بواسطة رئيس المجلس</td>
+        <td><span class="tag" title="معايير / مجموعات / معايير جزئية">2 / 4 / 9</span></td>
+        <td><span class="badge amber">مسودة</span></td><td><a href="publication-standards.html?pub=v4" class="btn btn--ghost btn--sm">فتح التأليف ←</a></td></tr><tr style="cursor:pointer" onclick="location.href='publication-standards.html?pub=v3'">
+        <td class="strong">معايير الهندسة</td><td><span class="ver"><span class="pill">v3</span></span></td>
+        <td class="muted">2026-01-15</td><td>منشور — يحكم دورة 2026-2027</td>
+        <td><span class="tag" title="معايير / مجموعات / معايير جزئية">5 / 12 / 38</span></td>
+        <td><span class="badge green">منشور · فعّال</span></td><td><a href="publication-standards.html?pub=v3" class="btn btn--ghost btn--sm">عرض شجرة المعايير ←</a></td></tr><tr style="cursor:pointer" onclick="location.href='publication-standards.html?pub=v2'">
+        <td class="strong">معايير الهندسة</td><td><span class="ver"><span class="pill old">v2</span></span></td>
+        <td class="muted">2023-09-01</td><td>منشور — مؤرشف</td>
+        <td><span class="tag" title="معايير / مجموعات / معايير جزئية">5 / 10 / 32</span></td>
+        <td><span class="badge grey">منشور · مؤرشف</span></td><td><a href="publication-standards.html?pub=v2" class="btn btn--ghost btn--sm">عرض شجرة المعايير ←</a></td></tr><tr style="cursor:pointer" onclick="location.href='publication-standards.html?pub=v1'">
+        <td class="strong">معايير الهندسة</td><td><span class="ver"><span class="pill old">v1</span></span></td>
+        <td class="muted">2020-06-10</td><td>منشور — مؤرشف</td>
+        <td><span class="tag" title="معايير / مجموعات / معايير جزئية">4 / 9 / 27</span></td>
+        <td><span class="badge grey">منشور · مؤرشف</span></td><td><a href="publication-standards.html?pub=v1" class="btn btn--ghost btn--sm">عرض شجرة المعايير ←</a></td></tr></tbody></table></div></div>
     </div>
   </div>
 </div>
